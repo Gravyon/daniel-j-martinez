@@ -6,13 +6,13 @@ import Projects from "./components/Projects";
 
 function App() {
   return (
-    <>
+    <div>
       {/* <Navbar /> */}
       <NavbarDark />
       <HeroSection />
       <h1 className="flex m-4 p-2">Projects</h1>
       <Projects />
-    </>
+    </div>
   );
 }
 
