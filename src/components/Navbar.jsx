@@ -1,6 +1,5 @@
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import viteLogo from "./../assets/vite.svg";
 import logo from "./../assets/logo.gif";
 const navigation = [
   { name: "Contact", href: "#contact", current: false },

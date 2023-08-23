@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="bg-hero bg-cover relative bg-no-repeat bg-center h-full">
         <div className="flex flex-col mx-4 px-5 py-24 md:mx-0 md:px-0 md:pl-5 md:py-0 md:pt-16 lg:pt-12 h-full">
           <Slide delay={100} direction="down" duration={1000}>
-            <div className="text-center md:text-text">
+            <div className="text-center md:text-left">
               <h1 className="text-white text-7xl font-bold leading-27 md:pl-10 lg:pl-14 xl:pl-28">
                 <span>Daniel Martinez</span>
               </h1>
@@ -53,13 +53,13 @@ const HeroSection = () => {
               </Slide>
             </div>
 
-            <div className="w-1/2 flex flex-col justify-end mb-0 mx-0 place-items-end ">
+            {/* <div className="w-1/2 flex flex-col justify-end mb-0 mx-0 place-items-end ">
               <img
                 className="hidden md:block mt-auto"
                 src="/home/img-landing-hero.png"
                 alt="Hero"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
