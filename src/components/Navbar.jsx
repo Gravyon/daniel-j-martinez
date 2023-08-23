@@ -1,63 +1,83 @@
-import React, { useState } from "react";
-import viteLogo from "../assets/vite.svg";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import viteLogo from "./../assets/vite.svg";
+const navigation = [
+  { name: "Contact", href: "#contact", current: false },
+  { name: "About Me", href: "#about", current: false },
+  { name: "Projects", href: "#projects", current: false },
+  // { name: "Calendar", href: "#", current: false },
+];
 
-const Navbar = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
 
+export default function Navbar() {
   return (
-    <nav className="h-25 w-full bg-bright-blue">
-      <div className="flex flex-wrap justify-between items-center px-4 py-4 mx-auto max-w-screen-xl">
-        <a href="/" className="mr-5 ml-5">
-          <img
-            src={viteLogo}
-            className="w-30 h-18 md:block"
-            alt="Devsafio Logo"
-          />
-        </a>
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          className="inline-flex items-center p-2 ml-3 text-sm text-gray-300 rounded-lg md:hidden hover:bg-gray-100 hover:text-bright-blue focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-          onClick={() => setOpenMenu(!openMenu)}
-        >
-          <span className="sr-only">Open main menu</span>
-          <svg
-            className="w-6 h-6"
-            aria-hidden="true"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clipRule="evenodd"
-            ></path>
-          </svg>
-        </button>
-        <div className={`${!openMenu && "hidden"} w-full md:block md:w-auto`}>
-          <div className="whitespace-nowrap font-medium flex flex-col items-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:gap-x-8 md:mt-0 md:border-0  dark:border-gray-700">
-            <>
-              <a
-                href="/welcome"
-                className="text-white w-full hover:bg-transparent hover:divide-amber-300 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 outline outline-orange-500 dark:hover:bg-slate-800 focus:outline-none flex-grow"
-              >
-                Dashboard
-              </a>
-              <a
-                href="/welcome"
-                className="text-white w-full hover:bg-gray-100 hover:text-blue-300 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2  dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 flex-grow"
-              >
-                Dashboard
-              </a>
-            </>
+    <Disclosure as="nav">
+      {({ open }) => (
+        <>
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div className="relative flex h-16 items-center justify-between">
+              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                {/* Mobile menu button*/}
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <span className="absolute -inset-0.5" />
+                  <span className="sr-only">Open main menu</span>
+                  {open ? (
+                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                  ) : (
+                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                  )}
+                </Disclosure.Button>
+              </div>
+              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <div className="flex flex-shrink-0 items-center">
+                  <img
+                    className="h-8 w-auto"
+                    src={viteLogo}
+                    alt="Your Company"
+                  />
+                </div>
+                <div className="hidden sm:ml-6 sm:block">
+                  <div className="flex space-x-4">
+                    {navigation.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className="text-gray-300 nav-text rounded-md px-3 py-2 text-sm font-medium"
+                        aria-current={item.current ? "page" : undefined}
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </nav>
+          <Disclosure.Panel className="sm:hidden">
+            <div className="space-y-1 px-2 pb-3 pt-2">
+              {navigation.map((item) => (
+                <Disclosure.Button
+                  key={item.name}
+                  as="a"
+                  href={item.href}
+                  className={classNames(
+                    item.current
+                      ? "bg-gray-900 text-white"
+                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    "block rounded-md px-3 py-2 text-base font-medium"
+                  )}
+                  aria-current={item.current ? "page" : undefined}
+                >
+                  {item.name}
+                </Disclosure.Button>
+              ))}
+            </div>
+          </Disclosure.Panel>
+        </>
+      )}
+    </Disclosure>
   );
-};
-
-export default Navbar;
+}

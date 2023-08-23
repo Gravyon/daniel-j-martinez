@@ -1,3 +1,12 @@
 .typography-hover:hover {
-  color: #aeb108; /* Change this to the desired hover color */
+  color: #00ccfd; /* Change this to the desired hover color */
+}
+
+.card-hover:hover {
+  border-color: #ff34b3;
+}
+
+.nav-text:hover {
+  color: #ff34b3;
+  background: #201148;
 }
