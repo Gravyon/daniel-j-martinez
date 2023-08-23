@@ -10,25 +10,30 @@ export default function AboutMe() {
       <div className="about-me-content">
         <Slide direction="left">
           <p className="about-me-text">
-            Hi there! I'm [Your Name], a passionate [Your Profession] with a
-            love for [Your Interests]. I enjoy [Some Hobbies], and I'm
-            constantly learning new things in the field of [Your Field]. I
-            believe in the power of [Something You Believe In].
+            Hello there! I'm a web developer, I like to learn new technologies,
+            try new things, succeed and fail, but overcome the challenges in the
+            end. Programming is my passion and I love the feeling when starting
+            a new project with all kinds of new ideas and plans.
           </p>
         </Slide>
         <Slide direction="right">
-          <p className="about-me-text">
-            This blog is a platform where I share my thoughts, experiences, and
-            insights about [Topics You Write About]. Join me on this journey as
-            we explore the fascinating world of [Your Expertise].
+          <p className="about-me-text m-2">
+            I am also familiar with Agile Methodologies like SCRUM and Lean
+            Software Development using Kanban and Jira. I am looking for an
+            opportunity in the IT field to continue learning and broaden my
+            horizons, not only in technical knowledge, but also to meet new
+            people and exchange ideas and knowledge.
           </p>
         </Slide>
         <Slide direction="left">
-          <p className="about-me-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
-            dolores est quod cumque sint eligendi beatae facilis accusantium a
-            adipisci saepe ipsam officia expedita, corporis voluptate cum
-            eveniet illo non?
+          <p className="about-me-text m-2">
+            My academic studies include a Bachelor's degree in Computer Science
+            and a Bachelor's degree in Information Technology, which has given
+            me a strong foundation in programming fundamentals and software
+            concepts. Additionally, the full-stack bootcamp I went to allowed me
+            to gain practical skills in developing web applications using a
+            variety of technologies. I'm always learning the new cool thing
+            around the IT block.
           </p>
         </Slide>
       </div>

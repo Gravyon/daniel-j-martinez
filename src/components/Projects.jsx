@@ -23,7 +23,7 @@ const Projects = () => {
             <Card
               color="gray"
               variant="gradient"
-              className="mt-6 w-80 m-2 border rounded cursor-pointer transition-all card-hover hover:border-2 typography-hover"
+              className="mt-6 w-80 m-2 border rounded-2xl cursor-pointer transition-all card-hover hover:border-2 typography-hover"
             >
               <CardHeader color="blue-gray" className="relative h-56">
                 <img className="mt-2" src={project.image} alt="card-image" />

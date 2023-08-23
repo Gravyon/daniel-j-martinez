@@ -1,6 +1,7 @@
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import viteLogo from "./../assets/vite.svg";
+import logo from "./../assets/logo.gif";
 const navigation = [
   { name: "Contact", href: "#contact", current: false },
   { name: "About Me", href: "#about", current: false },
@@ -34,12 +35,12 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="h-8 w-auto"
-                    src={viteLogo}
-                    alt="Your Company"
+                    className="h-12 w-auto"
+                    src={logo}
+                    alt="Daniel Martinez"
                   />
                 </div>
-                <div className="hidden sm:ml-6 sm:block">
+                <div className="hidden sm:ml-6 sm:block mt-2">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
