@@ -19,10 +19,10 @@ const Projects = () => {
           <Card
             color="gray"
             variant="gradient"
-            className="mt-6 w-96 m-2 outline outline-neutral-50 rounded cursor-pointer transition-all hover:border-blue-500 hover:border-2 typography-hover"
+            className="mt-6 w-96 m-2 border rounded cursor-pointer transition-all hover:border-blue-500 hover:border-2 typography-hover"
           >
             <CardHeader color="blue-gray" className="relative h-56">
-              <img src={project.image} alt="card-image" />
+              <img className="mt-2" src={project.image} alt="card-image" />
             </CardHeader>
             <CardBody>
               <Typography variant="h3" color="blue-gray" className="mb-2">

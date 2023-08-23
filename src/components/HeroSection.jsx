@@ -1,5 +1,6 @@
 import React from "react";
 import { Slide, Zoom } from "react-awesome-reveal";
+import { SocialIcon } from "react-social-icons";
 
 const HeroSection = () => {
   return (
@@ -37,8 +38,13 @@ const HeroSection = () => {
                   <a href="#contact">
                     <button
                       type="button"
-                      className="mx-2 py-2 px-4 text-sm lg:text-base font-bold uppercase leading-9 bg-gray-100 rounded-3xl w-44 lg:w-52 h-14 hover:bg-bright-blue hover:text-black focus:ring-4 focus:ring-blue-300"
+                      className="outline mx-2 py-2 px-4 text-sm lg:text-base font-bold uppercase leading-9  rounded-3xl w-44 lg:w-52 h-14 focus:ring-4 focus:ring-blue-300"
                     >
+                      <SocialIcon
+                        bgColor="white"
+                        url="mailto:rdjmartinez95@gmail.com?subject=Hello!"
+                        style={{ height: 40, width: 40 }}
+                      />{" "}
                       Contact
                     </button>
                   </a>
