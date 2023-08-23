@@ -5,7 +5,9 @@ import { SocialIcon } from "react-social-icons";
 const HeroSection = () => {
   return (
     <section className="mb-8">
-      <div className="bg-hero relative bg-no-repeat bg-center h-full">
+      <div
+        className="bg-hero md:bg-cyan-900 relative bg-no-repeat bg-center h-full"
+      >
         <div className="flex flex-col mx-4 px-5 py-24 md:mx-0 md:px-0 md:pl-5 md:py-0 md:pt-16 lg:pt-12 h-full">
           <Slide delay={100} direction="down" duration={1000}>
             <div className="text-center md:text-left">

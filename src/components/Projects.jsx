@@ -38,7 +38,7 @@ const Projects = () => {
                 </Typography>
               </CardBody>
               <CardFooter className="pt-1 m-4">
-                <a target="_blank" href={project.repo}>
+                <a target="_blank" href={project.link}>
                   <Button>Check it out</Button>
                 </a>
               </CardFooter>
