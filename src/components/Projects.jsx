@@ -10,12 +10,15 @@ import {
 import { data } from "../data/projects";
 import { Slide, Zoom } from "react-awesome-reveal";
 import "./styles.css";
+import { Trans } from "react-i18next";
 
 const Projects = () => {
   return (
-    <div>
+    <div >
       <Slide delay={100} direction="left" duration={1000}>
-        <h1 className="flex m-4 p-2 mt-8">Projects</h1>
+        <h1 className="flex m-4 p-2 mt-8">
+          <Trans i18nKey="projects">Projects</Trans>
+        </h1>
       </Slide>
       <div className="flex flex-wrap justify-center">
         {data.map((project, index) => (
@@ -34,12 +37,15 @@ const Projects = () => {
                 </Typography>
                 <Typography className="m-2">{project.description}</Typography>
                 <Typography className="m-2">
-                  Technologies used: {project.tecnologies}
+                  <Trans i18nKey="tech"></Trans>
+                  {project.tecnologies}
                 </Typography>
               </CardBody>
               <CardFooter className="pt-1 m-4">
                 <a target="_blank" href={project.link}>
-                  <Button>Check it out</Button>
+                  <Button>
+                    <Trans i18nKey="checkitout"></Trans>
+                  </Button>
                 </a>
               </CardFooter>
             </Card>

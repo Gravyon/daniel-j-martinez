@@ -6,15 +6,15 @@ import Projects from "./components/Projects";
 
 function App() {
   return (
-    <div className="m-2">
+    <div className="m-2" >
       <Navbar />
       <div id="contact">
         <HeroSection />
       </div>
-      <div id="about">
+      <div id="aboutme">
         <AboutMe className="mb-2" />
       </div>
-      <div id="projects" className="py-24">
+      <div id="projects">
         <Projects />
       </div>
     </div>

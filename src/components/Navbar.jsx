@@ -1,18 +1,17 @@
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "./../assets/logo.gif";
+import { useTranslation, Trans } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
+
 const navigation = [
-  { name: "Contact", href: "#contact", current: false },
-  { name: "About Me", href: "#about", current: false },
-  { name: "Projects", href: "#projects", current: false },
-  // { name: "Calendar", href: "#", current: false },
+  { name: "Contact", href: "#contact", navkey: "contact", current: false },
+  { name: "About Me", href: "#aboutme", navkey: "aboutme", current: false },
+  { name: "Projects", href: "#projects", navkey: "projects", current: false },
 ];
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
 export default function Navbar() {
+  const { t, i18n } = useTranslation();
   return (
     <Disclosure as="nav">
       {({ open }) => (
@@ -21,7 +20,7 @@ export default function Navbar() {
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 nav-text focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -48,11 +47,17 @@ export default function Navbar() {
                         className="text-gray-300 nav-text rounded-md px-3 py-2 text-sm font-medium"
                         aria-current={item.current ? "page" : undefined}
                       >
-                        {item.name}
+                        <Trans i18nKey={item.navkey}>{item.href}</Trans>
                       </a>
                     ))}
                   </div>
                 </div>
+              </div>
+              <div>
+                <LanguageSwitcher
+                  currentLanguage={i18n.language}
+                  onChangeLanguage={(lng) => i18n.changeLanguage(lng)}
+                />
               </div>
             </div>
           </div>
@@ -63,15 +68,10 @@ export default function Navbar() {
                   key={item.name}
                   as="a"
                   href={item.href}
-                  className={classNames(
-                    item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                    "block rounded-md px-3 py-2 text-base font-medium"
-                  )}
+                  className="text-gray-300 hover:outline block nav-text rounded-md px-3 py-2 text-sm font-medium"
                   aria-current={item.current ? "page" : undefined}
                 >
-                  {item.name}
+                  {t(item.name)}
                 </Disclosure.Button>
               ))}
             </div>

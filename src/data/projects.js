@@ -6,7 +6,7 @@ export const data = [
     title: "Devsafio",
     description:
       "A fullstack overhaul of Devsafio's main website where employers can request talent and applicants can find jobs",
-    tecnologies: "React, Node, Typescript, TypeORM, Tailwind",
+    tecnologies: "React, Node, Firebase, Typescript, TypeORM, Tailwind",
     image: devsafio,
     link: "https://c8-frontend.vercel.app/",
   },
