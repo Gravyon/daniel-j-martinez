@@ -1,12 +1,13 @@
 import "./App.css";
 import AboutMe from "./components/AboutMe";
+import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 
 function App() {
   return (
-    <div className="m-2" >
+    <div className="m-2">
       <Navbar />
       <div id="contact">
         <HeroSection />
@@ -16,6 +17,9 @@ function App() {
       </div>
       <div id="projects">
         <Projects />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

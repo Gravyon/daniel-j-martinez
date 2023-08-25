@@ -2,7 +2,7 @@ import React from "react";
 import { Slide } from "react-awesome-reveal";
 import { Trans } from "react-i18next";
 
-export default function AboutMe() {
+export default function AboutMe () {
   return (
     <div className="about-me mb-8">
       <Slide delay={100} direction="down" duration={1000}>
