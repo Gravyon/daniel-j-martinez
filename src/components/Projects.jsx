@@ -14,8 +14,8 @@ import { Trans } from "react-i18next";
 
 const Projects = () => {
   return (
-    <div >
-      <Slide delay={100} direction="left" duration={1000}>
+    <div>
+      <Slide triggerOnce delay={100} direction="left" duration={1000}>
         <h1 className="flex m-4 p-2 mt-8">
           <Trans i18nKey="projects">Projects</Trans>
         </h1>

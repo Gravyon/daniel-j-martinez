@@ -2,16 +2,16 @@ import React from "react";
 import { Slide } from "react-awesome-reveal";
 import { Trans } from "react-i18next";
 
-export default function AboutMe () {
+export default function AboutMe() {
   return (
     <div className="about-me mb-8">
-      <Slide delay={100} direction="down" duration={1000}>
+      <Slide triggerOnce delay={100} direction="down" duration={1000}>
         <h1 className="flex m-4 p-2">
           <Trans i18nKey="aboutme">About me</Trans>
         </h1>
       </Slide>
       <div className="about-me-content">
-        <Slide direction="left">
+        <Slide triggerOnce direction="left">
           <p className="about-me-text">
             <Trans i18nKey="info1">
               Hello there! I'm a web developer, I like to learn new
@@ -22,7 +22,7 @@ export default function AboutMe () {
             </Trans>
           </p>
         </Slide>
-        <Slide direction="right">
+        <Slide triggerOnce direction="right">
           <p className="about-me-text m-2">
             <Trans i18nKey="info2">
               I am also familiar with Agile Methodologies like SCRUM and Lean
@@ -33,7 +33,7 @@ export default function AboutMe () {
             </Trans>
           </p>
         </Slide>
-        <Slide direction="left">
+        <Slide triggerOnce direction="left">
           <p className="about-me-text m-2">
             <Trans i18nKey="info3">
               My academic studies include a Bachelor's degree in Computer
