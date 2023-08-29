@@ -47,7 +47,7 @@ export default function Navbar() {
                         className="text-gray-300 nav-text rounded-md px-3 py-2 text-sm font-medium"
                         aria-current={item.current ? "page" : undefined}
                       >
-                        <Trans i18nKey={item.navkey}>{item.href}</Trans>
+                        <Trans i18nKey={item.navkey}></Trans>
                       </a>
                     ))}
                   </div>

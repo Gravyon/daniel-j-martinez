@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import "./il8n/il8n.js";
+import "./i18n/i18n.js";
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <Suspense fallback="...is loading">
     <App />
-  </React.StrictMode>
+  </Suspense>
 );

@@ -4,6 +4,7 @@ import dreamview from "../assets/dreamview.png";
 export const data = [
   {
     title: "Devsafio",
+    descname: "devsafio",
     description:
       "A fullstack overhaul of Devsafio's main website where employers can request talent and applicants can find jobs",
     tecnologies: "React, Node, Firebase, Typescript, TypeORM, Tailwind",
@@ -12,6 +13,7 @@ export const data = [
   },
   {
     title: "Casa Arte",
+    descname: "casaarte",
     description:
       "A full-stack interactive web application where users can buy and sell art, comment and rate others artwork",
     tecnologies: "React,js, Node.js, Python, Flask, Bootstrap",
@@ -21,14 +23,16 @@ export const data = [
   },
   {
     title: "Reddit Clone",
+    descname: "reddit",
     description:
-      "A clone of Reddit with a functioning login and register, communities and user feed",
+      "A clone of Reddit with a functioning login and register, using Firebase as the database with user communities and user feed",
     tecnologies: "NextJS, Firebase, TypeScript and Chakra UI",
     image: reddit,
     link: "https://reddit-clone-gravyon.vercel.app/",
   },
   {
     title: "Dreamview",
+    descname: "dreamview",
     description:
       "As a technical test, I was tasked with building a website for a fictional cinema theater where they would display the movies for viewing and users can review them",
     tecnologies: "React, CSS and Material UI",

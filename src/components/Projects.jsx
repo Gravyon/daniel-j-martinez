@@ -35,7 +35,9 @@ const Projects = () => {
                 <Typography variant="h3" color="blue-gray" className="mb-2">
                   {project.title}
                 </Typography>
-                <Typography className="m-2">{project.description}</Typography>
+                <Typography className="m-2">
+                  <Trans i18nKey={project.descname}></Trans>
+                </Typography>
                 <Typography className="m-2">
                   <Trans i18nKey="tech"></Trans>
                   {project.tecnologies}

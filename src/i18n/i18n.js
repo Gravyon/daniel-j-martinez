@@ -25,6 +25,14 @@ i18n
           projects: "Projects",
           checkitout: "Check it out",
           tech: "Technologies used: ",
+          devsafio:
+            "A fullstack overhaul of Devsafio's main website where employers can request talent and applicants can find jobs.",
+          casaarte:
+            "A full-stack interactive web application where users can buy and sell art, comment and rate other's artwork.",
+          reddit:
+            "A clone of Reddit with a functioning login and register, using Firebase as the database with user communities and user feed.",
+          dreamview:
+            "As a technical test, I was tasked with building a website for a fictional cinema theater where they would display the movies for viewing and users can review them.",
           info1:
             "Hello there! I'm a web developer, I like to learn new technologies, try new things, succeed and fail, but overcome the challenges in the end. Programming is my passion and I love the feeling when starting a new project with all kinds of new ideas and plans. ",
           info2:
@@ -41,6 +49,14 @@ i18n
           projects: "Proyectos",
           checkitout: "Visitar",
           tech: "Tecnologias utilizadas: ",
+          devsafio:
+            "Una renovación completa del sitio web principal de Devsafio, donde los empleadores pueden solicitar talento y los solicitantes pueden encontrar trabajos.",
+          casaarte:
+            "Una aplicación web interactiva fullstack donde los usuarios pueden comprar y vender arte, comentar y calificar las obras de otros.",
+          reddit:
+            "Un clon de Reddit con un sistema de inicio de sesión y registro funcional, utilizando Firebase como base de datos con comunidades de usuarios y un feed de usuarios.",
+          dreamview:
+            "Como prueba técnica, se me encargó la construcción de un sitio web para un cine ficticio, donde mostrarían las películas para su visualización y los usuarios pueden reseñarlas.",
           info1:
             "¡Hola! Soy un desarrollador web, me gusta aprender nuevas tecnologías, probar cosas nuevas, triunfar y fracasar, pero al final superar los desafíos. La programación es mi pasión y me encanta la sensación de iniciar un nuevo proyecto con todo tipo de nuevas ideas y planes.",
           info2:
