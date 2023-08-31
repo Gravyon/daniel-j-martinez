@@ -30,10 +30,10 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 ml-14 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
+              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <div className="flex items-center ml-10 md:ml-1">
                   <img
-                    className="h-12 w-auto"
+                    className="h-12 w-auto "
                     src={logo}
                     alt="Daniel Martinez"
                   />
@@ -71,7 +71,7 @@ export default function Navbar() {
                   className="text-gray-300 hover:outline block nav-text rounded-md px-3 py-2 text-sm font-medium"
                   aria-current={item.current ? "page" : undefined}
                 >
-                  {t(item.name)}
+                  <Trans i18nKey={item.navkey}></Trans>
                 </Disclosure.Button>
               ))}
             </div>
