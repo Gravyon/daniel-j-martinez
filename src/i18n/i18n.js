@@ -30,7 +30,7 @@ i18n
           casaarte:
             "A full-stack interactive web application where users can buy and sell art, comment and rate other's artwork.",
           reddit:
-            "A clone of Reddit with a functioning login and register, using Firebase as the database with user communities and user feed.",
+            "A clone of Reddit with login and register, using Firebase as the database with communities and user feed.",
           dreamview:
             "As a technical test, I was tasked with building a website for a fictional cinema theater where they would display the movies for viewing and users can review them.",
           info1:
@@ -52,7 +52,7 @@ i18n
           devsafio:
             "Una renovación completa del sitio web principal de Devsafio, donde los empleadores pueden solicitar talento y los solicitantes pueden encontrar trabajos.",
           casaarte:
-            "Una aplicación web interactiva fullstack donde los usuarios pueden comprar y vender arte, comentar y calificar las obras de otros.",
+            "Una aplicación web interactiva fullstack donde los usuarios pueden comprar y vender su propia arte o a nombre de un artista, comentar y calificar las obras de otros",
           reddit:
             "Un clon de Reddit con un sistema de inicio de sesión y registro funcional, utilizando Firebase como base de datos con comunidades de usuarios y un feed de usuarios.",
           dreamview:
