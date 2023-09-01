@@ -10,9 +10,11 @@ import {
 import { data } from "../data/projects";
 import { Slide, Zoom } from "react-awesome-reveal";
 import "./styles.css";
-import { Trans } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 const Projects = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <Slide triggerOnce delay={100} direction="left" duration={1000}>

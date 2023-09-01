@@ -1,8 +1,10 @@
 import React from "react";
 import { Slide } from "react-awesome-reveal";
-import { Trans } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
-export default function AboutMe() {
+const AboutMe = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="about-me mb-8">
       <Slide triggerOnce delay={100} direction="down" duration={1000}>
@@ -49,4 +51,6 @@ export default function AboutMe() {
       </div>
     </div>
   );
-}
+};
+
+export default AboutMe;

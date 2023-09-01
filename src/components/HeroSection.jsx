@@ -38,7 +38,7 @@ const HeroSection = () => {
               </Slide> */}
               <Slide triggerOnce delay={100} direction="right" duration={1000}>
                 <div className="w-full flex items-center justify-center md:justify-start">
-                  <a href="mailto:rdjmartinez95@gmail.com?subject=Hello!">
+                  <a href="mailto:rdjmartinez95@gmail.com">
                     <button
                       type="button"
                       className="mx-2 py-2 px-4 text-sm lg:text-base font-bold uppercase leading-9 rounded-2xl w-40 lg:w-52 h-14 focus:ring-4 focus:ring-blue-300"
@@ -46,7 +46,7 @@ const HeroSection = () => {
                       <SocialIcon
                         bgColor="white"
                         target="_blank"
-                        url="mailto:rdjmartinez95@gmail.com?subject=Hello!"
+                        url="mailto:rdjmartinez95@gmail.com"
                         style={{ height: 40, width: 40 }}
                       />
                       {"  "}
