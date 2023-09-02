@@ -47,7 +47,6 @@ const HeroSection = () => {
                     <motion.button
                       type="button"
                       className="nav-text uppercase text-sm mx-2 py-2 px-4 bg-purple rounded-2xl font-bold "
-                      // className="nav-text mx-2 py-2 px-4 text-sm lg:text-base font-bold uppercase leading-9 rounded-2xl w-40 lg:w-52 h-14 focus:ring-4 focus:ring-blue-300"
                       whileHover="hover"
                       variants={buttonVariants}
                     >
