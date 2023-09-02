@@ -11,10 +11,12 @@ import { data } from "../data/projects";
 import { Slide, Zoom } from "react-awesome-reveal";
 import "./styles.css";
 import { Trans, useTranslation } from "react-i18next";
-
+import { motion } from "framer-motion";
 const Projects = () => {
   const { t } = useTranslation();
-
+  const buttonVariants = {
+    hover: { scale: 1.1 },
+  };
   return (
     <div>
       <Slide triggerOnce delay={100} direction="left" duration={1000}>
@@ -47,9 +49,13 @@ const Projects = () => {
               </CardBody>
               <CardFooter className="pt-1 m-4">
                 <a target="_blank" href={project.link}>
-                  <Button>
+                  <motion.button
+                    whileHover="hover" 
+                    variants={buttonVariants}
+                    className="nav-text uppercase text-sm bg-purple"
+                  >
                     <Trans i18nKey="checkitout"></Trans>
-                  </Button>
+                  </motion.button>
                 </a>
               </CardFooter>
             </Card>
