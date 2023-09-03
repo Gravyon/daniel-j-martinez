@@ -58,7 +58,7 @@ i18n
           devsafio:
             "Una renovación completa del sitio web principal de Devsafio, donde los empleadores pueden solicitar talento y los solicitantes pueden encontrar trabajos.",
           casaarte:
-            "Una aplicación web interactiva fullstack donde los usuarios pueden comprar y vender su propia arte o a nombre de un artista, comentar y calificar las obras de otros",
+            "Una página donde los usuarios pueden comprar y vender su propia arte o a nombre de un artista, comentar y calificar las obras de otros",
           reddit:
             "Un clon de Reddit con un sistema de inicio de sesión y registro funcional, utilizando Firebase como base de datos con comunidades de usuarios y un feed de usuarios.",
           dreamview:

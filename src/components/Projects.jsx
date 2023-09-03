@@ -12,6 +12,7 @@ import { Slide, Zoom } from "react-awesome-reveal";
 import "./styles.css";
 import { Trans, useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+
 const Projects = () => {
   const { t } = useTranslation();
   const buttonVariants = {

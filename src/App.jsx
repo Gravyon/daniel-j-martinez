@@ -19,9 +19,9 @@ function App() {
       <div id="projects">
         <Projects />
       </div>
-      {/* <div>
+      <div>
         <BookingCard />
-      </div> */}
+      </div>
       <div>
         <Footer />
       </div>

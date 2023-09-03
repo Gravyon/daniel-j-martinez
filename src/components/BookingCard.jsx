@@ -6,12 +6,10 @@ import {
   Typography,
   Button,
   Tooltip,
-  IconButton,
 } from "@material-tailwind/react";
-// import { data } from "../data/projects";
 import "./styles.css";
-import { Slide } from "react-awesome-reveal";
-import { Trans } from "react-i18next";
+import { Slide, Zoom } from "react-awesome-reveal";
+import { Trans, useTranslation } from "react-i18next";
 import devsafio from "../assets/devsafio.png";
 import reddit from "../assets/reddit.png";
 import dreamview from "../assets/dreamview.png";
@@ -34,15 +32,20 @@ import {
   SiChakraui,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import { motion } from "framer-motion";
+export function Projects() {
+  const { t } = useTranslation();
+  const cardhover = {
+    hover: { scale: 1.1 },
+  };
 
-export function BookingCard() {
   const data = [
     {
       title: "Devsafio",
       descname: "devsafio",
       description:
         "A fullstack overhaul of Devsafio's main website where employers can request talent and applicants can find jobs",
-      tecnologies: [
+      technologies: [
         {
           name: "React",
           icon: <FaReact />,
@@ -80,7 +83,7 @@ export function BookingCard() {
       descname: "casaarte",
       description:
         "A full-stack interactive web application where users can buy and sell art, comment and rate others artwork",
-      tecnologies: [
+      technologies: [
         {
           name: "React",
           icon: <FaReact />,
@@ -114,7 +117,7 @@ export function BookingCard() {
       descname: "reddit",
       description:
         "A clone of Reddit with a functioning login and register, using Firebase as the database with user communities and user feed",
-      tecnologies: [
+      technologies: [
         {
           name: "NextJS",
           icon: <TbBrandNextjs />,
@@ -140,7 +143,7 @@ export function BookingCard() {
       descname: "dreamview",
       description:
         "As a technical test, I was tasked with building a website for a fictional cinema theater where they would display the movies for viewing and users can review them",
-      tecnologies: [
+      technologies: [
         {
           name: "React",
           icon: <FaReact />,
@@ -172,38 +175,43 @@ export function BookingCard() {
       </Slide>
       <div className="flex flex-wrap justify-center">
         {data.map((project, index) => (
-          <Card
-            key={index}
-            // style={{ minHeight: "100%" }}
-            className="py-3 shadow-lg shadow-pink-600 max-w-[26rem] m-2 transition-all"
-          >
-            <CardHeader floated={false}>
-              <img className="rounded-xl" src={project.image} alt="Image" />
-              <div className="rounded-xl to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 hover:to-blue-600 " />
-            </CardHeader>
-            <CardBody>
-              <div className="mb-3 mt-3 m-3 items-center">
-                <Typography variant="h3" className="font-medium">
-                  {project.title}
-                </Typography>
-              </div>
-              <Typography className="m-3">{project.description}</Typography>
-            </CardBody>
-            <CardFooter className="pt-3 mt-auto">
-              <div className="m-8 mx-auto inline-flex flex-wrap items-center gap-3">
-                {project.tecnologies.map((tech, id) => (
-                  <Tooltip key={id} content={tech.name}>
-                    <span className="flex mb-auto cursor-pointer rounded-full border border-bright-blue p-3 transition-colors hover:border-pink-700 typography-hover">
-                      {tech.icon}
-                    </span>
-                  </Tooltip>
-                ))}
-              </div>
-              <Button className="nav-text" size="lg" fullWidth={true}>
-                Reserve
-              </Button>
-            </CardFooter>
-          </Card>
+          <Zoom delay={index * 100}>
+            <motion.div whileHover="hover" variants={cardhover}>
+              <Card
+                key={index}
+                className="m-5 mt-5 mb-5 py-3 shadow-lg shadow-pink-600 max-w-[26rem] transition-all"
+              >
+                <CardHeader floated={false}>
+                  <img className="rounded-xl" src={project.image} alt="Image" />
+                  <div className="rounded-xl to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 hover:to-blue" />
+                </CardHeader>
+                <CardBody>
+                  <div className="mb-3 mt-3 m-3 items-center">
+                    <Typography variant="h3" className="font-medium">
+                      {project.title}
+                    </Typography>
+                  </div>
+                  <Typography className="m-3">
+                    <Trans i18nKey={project.descname}></Trans>
+                  </Typography>
+                </CardBody>
+                <CardFooter className="pt-3 mt-auto">
+                  <div className="m-8 mx-auto inline-flex flex-wrap items-center gap-3">
+                    {project.technologies.map((tech, id) => (
+                      <Tooltip key={id} content={tech.name}>
+                        <span className="flex mb-auto cursor-pointer rounded-full border border-bright-blue p-3 transition-colors hover:border-pink-700 typography-hover">
+                          {tech.icon}
+                        </span>
+                      </Tooltip>
+                    ))}
+                  </div>
+                  <Button className="nav-text" size="lg" fullWidth={true}>
+                    <Trans i18nKey="checkitout"></Trans>
+                  </Button>
+                </CardFooter>
+              </Card>
+            </motion.div>
+          </Zoom>
         ))}
       </div>
     </div>
