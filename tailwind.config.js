@@ -3,9 +3,6 @@ export default {
   content: ["./index.html", "./src/**/*.jsx"],
   darkMode: 'class',
   theme: {
-    fontFamily: {
-      'poppins': ['Poppins', 'sans-serif']
-    },
     extend: {
       backgroundImage: {
         'hero': "url('/images/bg.gif')",

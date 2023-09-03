@@ -35,9 +35,7 @@ const HeroSection = () => {
               <Slide delay={100} direction="up" duration={1000} triggerOnce>
                 <div className="w-full xl:w-11/12 mb-24 text-center md:text-left">
                   <p className="text-sm font-normal leading-7 text-white">
-                    Soy un desarrollador de software que le apasiona solucionar
-                    problemas. Actualmente, busco una oportunidad que me desafíe
-                    y me permita seguir creciendo profesionalmente.
+                    <Trans i18nKey="intro"></Trans>
                   </p>
                 </div>
               </Slide>

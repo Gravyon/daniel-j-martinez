@@ -26,11 +26,12 @@ const Projects = () => {
       </Slide>
       <div className="flex flex-wrap justify-center">
         {data.map((project, index) => (
-          <Zoom key={index} delay={index * 100}>
+          <Zoom delay={index * 100}>
             <Card
+              key={index}
               color="gray"
               variant="gradient"
-              className="mt-6 w-80 m-2 border rounded-2xl cursor-pointer transition-all card-hover hover:border-2 typography-hover"
+              className="mt-6 w-80 m-2 border rounded-2xl cursor-pointer transition-all card-hover typography-hover"
             >
               <CardHeader color="blue-gray" className="relative h-56">
                 <img className="mt-2" src={project.image} alt="card-image" />
@@ -50,7 +51,7 @@ const Projects = () => {
               <CardFooter className="pt-1 m-4">
                 <a target="_blank" href={project.link}>
                   <motion.button
-                    whileHover="hover" 
+                    whileHover="hover"
                     variants={buttonVariants}
                     className="nav-text uppercase text-sm bg-purple"
                   >

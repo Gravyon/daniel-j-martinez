@@ -1,6 +1,8 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
+// import es from "../../public/locales/en/translation.json";
+// import en from "../../public/locales/es/translation.json";
 
 i18n
   // detect user language
@@ -23,12 +25,14 @@ i18n
           contact: "Contact",
           aboutme: "About me",
           projects: "Projects",
+          intro:
+            "I am a software developer who is passionate about solving problems. Currently, I am looking for an opportunity that challenges me and allows me to continue growing professionally.",
           checkitout: "Check it out",
           tech: "Technologies used: ",
           devsafio:
             "A fullstack overhaul of Devsafio's main website where employers can request talent and applicants can find jobs.",
           casaarte:
-            "A full-stack interactive web application where users can buy and sell art, comment and rate other's artwork.",
+            "A fullstack interactive web application where users can buy and sell art, comment and rate other's artwork.",
           reddit:
             "A clone of Reddit with login and register, using Firebase as the database with communities and user feed.",
           dreamview:
@@ -38,7 +42,7 @@ i18n
           info2:
             "I am also familiar with Agile Methodologies like SCRUM and Lean Software Development using Kanban and Jira. I am looking for an opportunity in the IT field to continue learning and broaden my horizons, not only in technical knowledge, but also to meet new people and exchange ideas and knowledge.",
           info3:
-            "My academic studies include a Bachelor's degree in Computer Science and a Bachelor's degree in Information Technology, which has given me a strong foundation in programming fundamentals and software concepts. Additionally, the full-stack bootcamp I went to allowed me to gain practical skills in developing web applications using a variety of technologies. I'm always learning the new cool thing around the IT block.",
+            "My academic studies include a Bachelor's degree in Computer Science and a Bachelor's degree in Information Technology, which has given me a strong foundation in programming fundamentals and software concepts. Additionally, the fullstack bootcamp I went to allowed me to gain practical skills in developing web applications using a variety of technologies. I'm always learning the new cool thing around the IT block.",
         },
       },
       es: {
@@ -47,6 +51,8 @@ i18n
           contact: "Contacto",
           aboutme: "Acerca de mi",
           projects: "Proyectos",
+          intro:
+            "Soy un desarrollador de software que le apasiona solucionar problemas. Actualmente, busco una oportunidad que me desafíe y me permita seguir creciendo profesionalmente.",
           checkitout: "Visitar",
           tech: "Tecnologias utilizadas: ",
           devsafio:
@@ -62,7 +68,7 @@ i18n
           info2:
             "También estoy familiarizado con metodologías ágiles como SCRUM y desarrollo de software Lean utilizando Kanban y Jira. Busco una oportunidad en el campo TI para seguir aprendiendo y ampliar mis horizontes, no solo en conocimientos técnicos, sino también para conocer gente nueva e intercambiar ideas y conocimientos.",
           info3:
-            "Mis estudios académicos incluyen un bachillerato en IT y una Licenciatura en Tecnología de la Información, lo que me ha brindado una base sólida en fundamentos de programación y conceptos de software. Además, el bootcamp full-stack al que asistí me permitió adquirir habilidades prácticas en el desarrollo de aplicaciones web utilizando una variedad de tecnologías. Siempre estoy aprendiendo cosas nuevas e interesantes en el ámbito de TI.",
+            "Mis estudios académicos incluyen un bachillerato en IT y una Licenciatura en Tecnología de la Información, lo que me ha brindado una base sólida en fundamentos de programación y conceptos de software. Además, el bootcamp fullstack al que asistí me permitió adquirir habilidades prácticas en el desarrollo de aplicaciones web utilizando una variedad de tecnologías. Siempre estoy aprendiendo cosas nuevas e interesantes en el ámbito de TI.",
         },
       },
     },

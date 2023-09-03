@@ -1,7 +1,12 @@
 .typography-hover:hover {
   color: #00ccfd;
 }
-
+.card {
+  /* color: #00ccfd; */
+  /* background: #2011a2; */
+  /* background-color: #2011a2; */
+  box-shadow: #00ccfd;
+}
 .card-hover:hover {
   border-color: #ff34b3;
 }

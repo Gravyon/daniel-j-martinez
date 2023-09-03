@@ -1,5 +1,6 @@
 import "./App.css";
 import AboutMe from "./components/AboutMe";
+import { BookingCard } from "./components/BookingCard";
 import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
@@ -18,6 +19,9 @@ function App() {
       <div id="projects">
         <Projects />
       </div>
+      {/* <div>
+        <BookingCard />
+      </div> */}
       <div>
         <Footer />
       </div>
