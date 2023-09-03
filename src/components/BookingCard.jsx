@@ -8,11 +8,161 @@ import {
   Tooltip,
   IconButton,
 } from "@material-tailwind/react";
-import { data } from "../data/projects";
+// import { data } from "../data/projects";
 import "./styles.css";
 import { Slide } from "react-awesome-reveal";
 import { Trans } from "react-i18next";
+import devsafio from "../assets/devsafio.png";
+import reddit from "../assets/reddit.png";
+import dreamview from "../assets/dreamview.png";
+import casaarte from "../assets/casaarte.png";
+import {
+  FaBootstrap,
+  FaCss3Alt,
+  FaDatabase,
+  FaFlask,
+  FaNodeJs,
+  FaPython,
+  FaReact,
+  FaUikit,
+  FaWpforms,
+} from "react-icons/fa";
+import {
+  SiTypescript,
+  SiFirebase,
+  SiTailwindcss,
+  SiChakraui,
+} from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+
 export function BookingCard() {
+  const data = [
+    {
+      title: "Devsafio",
+      descname: "devsafio",
+      description:
+        "A fullstack overhaul of Devsafio's main website where employers can request talent and applicants can find jobs",
+      tecnologies: [
+        {
+          name: "React",
+          icon: <FaReact />,
+        },
+        {
+          name: "Node",
+          icon: <FaNodeJs />,
+        },
+        {
+          name: "Firebase",
+          icon: <SiFirebase />,
+        },
+        {
+          name: "Typescript",
+          icon: <SiTypescript />,
+        },
+        {
+          name: "TypeORM",
+          icon: <FaDatabase />,
+        },
+        {
+          name: "Tailwind",
+          icon: <SiTailwindcss />,
+        },
+        {
+          name: "Formik",
+          icon: <FaWpforms />,
+        },
+      ],
+      image: devsafio,
+      link: "https://c8-frontend.vercel.app/",
+    },
+    {
+      title: "Casa Arte",
+      descname: "casaarte",
+      description:
+        "A full-stack interactive web application where users can buy and sell art, comment and rate others artwork",
+      tecnologies: [
+        {
+          name: "React",
+          icon: <FaReact />,
+        },
+        {
+          name: "Node",
+          icon: <FaNodeJs />,
+        },
+        {
+          name: "Python",
+          icon: <FaPython />,
+        },
+        {
+          name: "Flask",
+          icon: <FaFlask />,
+        },
+        {
+          name: "Bootstrap",
+          icon: <FaBootstrap />,
+        },
+        {
+          name: "Formik",
+          icon: <FaWpforms />,
+        },
+      ],
+      image: casaarte,
+      link: "https://casa-arte-oz78.onrender.com/",
+    },
+    {
+      title: "Reddit Clone",
+      descname: "reddit",
+      description:
+        "A clone of Reddit with a functioning login and register, using Firebase as the database with user communities and user feed",
+      tecnologies: [
+        {
+          name: "NextJS",
+          icon: <TbBrandNextjs />,
+        },
+        {
+          name: "Firebase",
+          icon: <SiFirebase />,
+        },
+        {
+          name: "Typescript",
+          icon: <SiTypescript />,
+        },
+        {
+          name: "Chakra UI",
+          icon: <SiChakraui />,
+        },
+      ],
+      image: reddit,
+      link: "https://reddit-clone-gravyon.vercel.app/",
+    },
+    {
+      title: "Dreamview",
+      descname: "dreamview",
+      description:
+        "As a technical test, I was tasked with building a website for a fictional cinema theater where they would display the movies for viewing and users can review them",
+      tecnologies: [
+        {
+          name: "React",
+          icon: <FaReact />,
+        },
+        {
+          name: "CSS",
+          icon: <FaCss3Alt />,
+        },
+        {
+          name: "Material UI",
+          icon: <FaUikit />,
+        },
+        {
+          name: "Formik UI",
+          icon: <FaWpforms />,
+        },
+      ],
+      image: dreamview,
+      link: "https://github.com/Gravyon/4geeks-final-project",
+    },
+  ];
+
   return (
     <div>
       <Slide triggerOnce delay={100} direction="left" duration={1000}>
@@ -24,7 +174,8 @@ export function BookingCard() {
         {data.map((project, index) => (
           <Card
             key={index}
-            className=" py-3 shadow-lg shadow-pink-600 max-w-[26rem] m-2 transition-all"
+            // style={{ minHeight: "100%" }}
+            className="py-3 shadow-lg shadow-pink-600 max-w-[26rem] m-2 transition-all"
           >
             <CardHeader floated={false}>
               <img className="rounded-xl" src={project.image} alt="Image" />
@@ -36,33 +187,18 @@ export function BookingCard() {
                   {project.title}
                 </Typography>
               </div>
-              <Typography className="m-3" color="gray">
-                {project.description}
-              </Typography>
-              <div className="group mt-8 inline-flex flex-wrap items-center gap-3">
-                {project.tecnologies.map((tech, icon) => (
-                  <Tooltip content={tech}>
-                    <span className="cursor-pointer rounded-full border border-bright-blue p-3 transition-colors hover:border-pink-700 typography-hover">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        className="h-5 w-5"
-                      >
-                        <path d="M12 7.5a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" />
-                        <path
-                          fillRule="evenodd"
-                          d="M1.5 4.875C1.5 3.839 2.34 3 3.375 3h17.25c1.035 0 1.875.84 1.875 1.875v9.75c0 1.036-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 011.5 14.625v-9.75zM8.25 9.75a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0zM18.75 9a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V9.75a.75.75 0 00-.75-.75h-.008zM4.5 9.75A.75.75 0 015.25 9h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H5.25a.75.75 0 01-.75-.75V9.75z"
-                          clipRule="evenodd"
-                        />
-                        <path d="M2.25 18a.75.75 0 000 1.5c5.4 0 10.63.722 15.6 2.075 1.19.324 2.4-.558 2.4-1.82V18.75a.75.75 0 00-.75-.75H2.25z" />
-                      </svg>
+              <Typography className="m-3">{project.description}</Typography>
+            </CardBody>
+            <CardFooter className="pt-3 mt-auto">
+              <div className="m-8 mx-auto inline-flex flex-wrap items-center gap-3">
+                {project.tecnologies.map((tech, id) => (
+                  <Tooltip key={id} content={tech.name}>
+                    <span className="flex mb-auto cursor-pointer rounded-full border border-bright-blue p-3 transition-colors hover:border-pink-700 typography-hover">
+                      {tech.icon}
                     </span>
                   </Tooltip>
                 ))}
               </div>
-            </CardBody>
-            <CardFooter className="pt-3">
               <Button className="nav-text" size="lg" fullWidth={true}>
                 Reserve
               </Button>

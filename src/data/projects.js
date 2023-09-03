@@ -1,13 +1,14 @@
 import devsafio from "../assets/devsafio.png";
 import reddit from "../assets/reddit.png";
 import dreamview from "../assets/dreamview.png";
+import casaarte from "../assets/casaarte.png";
 export const data = [
   {
     title: "Devsafio",
     descname: "devsafio",
     description:
       "A fullstack overhaul of Devsafio's main website where employers can request talent and applicants can find jobs",
-    tecnologies: ["React, Node, Firebase, Typescript, TypeORM,Tailwind"],
+    tecnologies: ["React, Node, Firebase, Typescript, TypeORM, Tailwind"],
     image: devsafio,
     link: "https://c8-frontend.vercel.app/",
   },
@@ -17,8 +18,7 @@ export const data = [
     description:
       "A full-stack interactive web application where users can buy and sell art, comment and rate others artwork",
     tecnologies: ["React, Node, Python, Flask, Bootstrap"],
-    image:
-      "https://camo.githubusercontent.com/5ce3da500733f2ea8f8aa89fd62b6b66890223fcb35aafbca596510a32a794aa/68747470733a2f2f692e696d6775722e636f6d2f42696f595a30732e706e67",
+    image: casaarte,
     link: "https://casa-arte-oz78.onrender.com/",
   },
   {
