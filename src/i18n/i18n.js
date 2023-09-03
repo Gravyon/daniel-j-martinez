@@ -36,7 +36,7 @@ i18n
           reddit:
             "A clone of Reddit with login and register, using Firebase as the database with communities and user feed.",
           dreamview:
-            "As a technical test, I was tasked with building a website for a fictional cinema theater where they would display the movies for viewing and users can review them.",
+            "For a technical test, Is had to build a website for a fictional cinema theater where they would display the movies for viewing and users can review them.",
           info1:
             "Hello there! I'm a web developer, I like to learn new technologies, try new things, succeed and fail, but overcome the challenges in the end. Programming is my passion and I love the feeling when starting a new project with all kinds of new ideas and plans. ",
           info2:
