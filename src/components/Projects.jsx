@@ -171,7 +171,7 @@ const Projects = () => {
     <div>
       <Slide triggerOnce delay={100} direction="left" duration={1000}>
         <h1 className="flex m-4 p-2 mt-8">
-          <Trans i18nKey="projects">Projects</Trans>
+          <Trans i18nKey="projects"></Trans>
         </h1>
       </Slide>
       <div className="flex flex-wrap justify-center">
@@ -192,7 +192,7 @@ const Projects = () => {
                       {project.title}
                     </Typography>
                   </div>
-                  <Typography className="m-3">
+                  <Typography className="m-2">
                     <Trans i18nKey={project.descname}></Trans>
                   </Typography>
                 </CardBody>

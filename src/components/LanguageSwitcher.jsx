@@ -4,18 +4,16 @@ import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 const LanguageSwitcher = ({ currentLanguage, onChangeLanguage }) => {
   const lngs = {
-    en: { nativeName: "EN" },
-    es: { nativeName: "ES" },
+    en: { nativeName: "en" },
+    es: { nativeName: "es" },
+    pt: { nativeName: "pt" },
   };
 
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(" ");
-  }
   return (
     <Menu>
       <div>
         <Menu.Button className="inline-flex w-full justify-center uppercase gap-x-1.5 rounded-md nav-text  px-3 py-2 text-sm font-semibold shadow-sm ring-1 ring-inset ">
-          {lngs[currentLanguage].nativeName}
+          {lngs[currentLanguage].nativeName.toUpperCase()}
           <ChevronDownIcon
             className="-mr-1 h-5 w-5 text-gray-400"
             aria-hidden="true"
@@ -43,7 +41,7 @@ const LanguageSwitcher = ({ currentLanguage, onChangeLanguage }) => {
                       active ? "nav-text typography-hover" : ""
                     } block px-4 py-2 text-sm w-full`}
                   >
-                    {lngs[lng].nativeName}
+                    {lngs[lng].nativeName.toUpperCase()}
                   </button>
                 )}
               </Menu.Item>
