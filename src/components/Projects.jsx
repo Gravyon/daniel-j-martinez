@@ -163,7 +163,7 @@ const Projects = () => {
         },
       ],
       image: dreamview,
-      link: "https://github.com/Gravyon/4geeks-final-project",
+      link: "https://dream-view.vercel.app/",
     },
   ];
 
@@ -206,9 +206,16 @@ const Projects = () => {
                       </Tooltip>
                     ))}
                   </div>
-                  <Button className="nav-text" size="lg" fullWidth={true}>
-                    <Trans i18nKey="checkitout"></Trans>
-                  </Button>
+                  <a target="_blank" href={project.link}>
+                    <Button
+                      type="button"
+                      className="nav-text"
+                      size="lg"
+                      fullWidth={true}
+                    >
+                      <Trans i18nKey="checkitout"></Trans>
+                    </Button>
+                  </a>
                 </CardFooter>
               </Card>
             </motion.div>
