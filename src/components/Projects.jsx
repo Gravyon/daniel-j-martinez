@@ -196,11 +196,11 @@ const Projects = () => {
                     <Trans i18nKey={project.descname}></Trans>
                   </Typography>
                 </CardBody>
-                <CardFooter className="pt-3 mt-auto">
+                <CardFooter className="pt-3 mt-auto m-2">
                   <div className="m-8 mx-auto inline-flex flex-wrap items-center gap-3">
                     {project.technologies.map((tech, id) => (
                       <Tooltip key={id} content={tech.name}>
-                        <span className="flex mb-auto cursor-pointer rounded-full border border-bright-blue p-3 transition-colors hover:border-pink-700 typography-hover">
+                        <span className="place-items-center mx-auto cursor-pointer rounded-full border border-bright-blue p-3 transition-colors hover:border-pink-700 typography-hover">
                           {tech.icon}
                         </span>
                       </Tooltip>
