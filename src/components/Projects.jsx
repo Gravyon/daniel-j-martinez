@@ -72,7 +72,7 @@ const Projects = () => {
           icon: <SiTailwindcss />,
         },
         {
-          name: "Formik",
+          name: "Formik/Yup",
           icon: <FaWpforms />,
         },
       ],
@@ -106,7 +106,7 @@ const Projects = () => {
           icon: <FaBootstrap />,
         },
         {
-          name: "Formik",
+          name: "Formik/Yup",
           icon: <FaWpforms />,
         },
       ],
@@ -158,7 +158,7 @@ const Projects = () => {
           icon: <FaUikit />,
         },
         {
-          name: "Formik UI",
+          name: "Formik/Yup",
           icon: <FaWpforms />,
         },
       ],
