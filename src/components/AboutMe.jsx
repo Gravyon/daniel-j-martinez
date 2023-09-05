@@ -15,37 +15,17 @@ const AboutMe = () => {
       <div className="about-me-content">
         <Slide triggerOnce direction="left">
           <p className="about-me-text">
-            <Trans i18nKey="info1">
-              Hello there! I'm a web developer, I like to learn new
-              technologies, try new things, succeed and fail, but overcome the
-              challenges in the end. Programming is my passion and I love the
-              feeling when starting a new project with all kinds of new ideas
-              and plans.
-            </Trans>
+            <Trans i18nKey="info1"></Trans>
           </p>
         </Slide>
         <Slide triggerOnce direction="right">
           <p className="about-me-text m-2">
-            <Trans i18nKey="info2">
-              I am also familiar with Agile Methodologies like SCRUM and Lean
-              Software Development using Kanban and Jira. I am looking for an
-              opportunity in the IT field to continue learning and broaden my
-              horizons, not only in technical knowledge, but also to meet new
-              people and exchange ideas and knowledge.
-            </Trans>
+            <Trans i18nKey="info2"></Trans>
           </p>
         </Slide>
         <Slide triggerOnce direction="left">
           <p className="about-me-text m-2">
-            <Trans i18nKey="info3">
-              My academic studies include a Bachelor's degree in Computer
-              Science and a Bachelor's degree in Information Technology, which
-              has given me a strong foundation in programming fundamentals and
-              software concepts. Additionally, the full-stack bootcamp I went to
-              allowed me to gain practical skills in developing web applications
-              using a variety of technologies. I'm always learning the new cool
-              thing around the IT block.
-            </Trans>
+            <Trans i18nKey="info3"></Trans>
           </p>
         </Slide>
       </div>
