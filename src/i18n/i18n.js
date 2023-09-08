@@ -15,7 +15,7 @@ i18n
   .init({
     debug: true,
     fallbackLng: "en",
-    preload: ["en", "es"],
+    preload: ["en", "es", "pt"],
     backend: {
       loadPath: "/locales/{{lng}}/translation.json",
     },
