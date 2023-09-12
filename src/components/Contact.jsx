@@ -69,7 +69,7 @@ export const Contact = () => {
                   type="text"
                   placeholder={t("fname")}
                 />
-                <Typography className="text-red-500">
+                <Typography className="text-red-500 mt-2">
                   {errors.fname && touched.fname && errors.fname}
                 </Typography>
               </div>
@@ -80,7 +80,7 @@ export const Contact = () => {
                   type="email"
                   placeholder={t("email")}
                 />
-                <Typography className="text-red-500">
+                <Typography className="text-red-500 mt-2">
                   {errors.email && touched.email && errors.email}
                 </Typography>
               </div>
@@ -93,7 +93,7 @@ export const Contact = () => {
                   className="p-2"
                   placeholder={t("message")}
                 />
-                <div className="text-red-500">
+                <div className="text-red-500 mt-2">
                   {errors.message && touched.message && errors.message}
                 </div>
                 <br />
