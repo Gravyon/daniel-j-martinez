@@ -6,17 +6,23 @@ import "./styles.css";
 import { Typography } from "@material-tailwind/react";
 import { Slide } from "react-awesome-reveal";
 import { Trans } from "react-i18next";
+import { motion } from "framer-motion";
+
 export const Contact = () => {
+  const cardhover = {
+    hover: { scale: 1.1 },
+  };
   //handleSubmit tiene su propia logica, por lo tanto al submit se le tiene que pasar esa funcion para que sea enviado
   // Tal vez seria posible hacerlo con funcion flecha pero es mas simple de esta forma
   const [state, handleSubmit] = useForm(import.meta.env.VITE_CONTACT);
   if (state.succeeded) {
-    console.log(state);
     return (
       <div>
         <h1>Thanks for your feedback!</h1>
       </div>
     );
+  } else {
+    console.log(state);
   }
   return (
     <Formik
@@ -31,7 +37,9 @@ export const Contact = () => {
               <Trans i18nKey="contact"></Trans>
             </h1>
           </Slide>
-          <section
+          <motion.div
+            whileHover="hover"
+            variants={cardhover}
             className="text-white bg-gray-900 my-5 mx-auto m-5 mt-5 mb-5 py-3 shadow-lg shadow-pink-600 max-w-[26rem] transition-all rounded-xl"
             style={{ maxWidth: "700px" }}
           >
@@ -84,7 +92,7 @@ export const Contact = () => {
                 Enviar
               </button>
             </div>
-          </section>
+          </motion.div>
         </Form>
       )}
     </Formik>
