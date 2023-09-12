@@ -25,6 +25,7 @@ export default {
         'black': '#000000',
         'dark-gray': '#232323',
         'purple': '#140B34',
+        'dark-purple': '#201148',
         'ligth-gray': '#575253',
         'cyan-light': '#89CFD9'
       },

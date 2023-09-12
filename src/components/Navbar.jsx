@@ -5,9 +5,9 @@ import { useTranslation, Trans } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const navigation = [
-  { name: "Contact", href: "#contact", navkey: "contact", current: false },
   { name: "About Me", href: "#aboutme", navkey: "aboutme", current: false },
   { name: "Projects", href: "#projects", navkey: "projects", current: false },
+  { name: "Contact", href: "#contact", navkey: "contact", current: false },
 ];
 
 export default function Navbar() {
