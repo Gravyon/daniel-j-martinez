@@ -1,14 +1,29 @@
 import React from "react";
 import { useForm } from "@formspree/react";
 import { Formik, Form, Field } from "formik";
-import { signupSchema } from "../validations/signupSchema";
 import "./styles.css";
 import { Typography } from "@material-tailwind/react";
 import { Slide } from "react-awesome-reveal";
 import { Trans } from "react-i18next";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import * as Yup from "yup";
 
 export const Contact = () => {
+  const { t } = useTranslation();
+  const signupSchema = Yup.object().shape({
+    fname: Yup.string()
+      .max(50, t("validation.fname.max"))
+      .min(2, t("validation.fname.min"))
+      .required(t("validation.fname.required")),
+    email: Yup.string()
+      .email(t("validation.email.email"))
+      .required(t("validation.email.required")),
+    message: Yup.string()
+      .max(250, t("validation.message.max"))
+      .min(2, t("validation.message.min"))
+      .required(t("validation.message.required")),
+  });
   const cardhover = {
     hover: { scale: 1.1 },
   };
@@ -45,14 +60,14 @@ export const Contact = () => {
           >
             <div className="flex flex-col p-5 align-items-center mx-auto w-100">
               <Typography variant="h3" className="mb-2">
-                Hablemos
+                <Trans i18nKey="talk"></Trans>
               </Typography>
               <div className="p-3">
                 <Field
                   className="p-2"
                   name="fname"
                   type="text"
-                  placeholder="First Name"
+                  placeholder={t("fname")}
                 />
                 <Typography className="text-red-500">
                   {errors.fname && touched.fname && errors.fname}
@@ -63,7 +78,7 @@ export const Contact = () => {
                   className="p-2"
                   name="email"
                   type="email"
-                  placeholder="Email Address"
+                  placeholder={t("email")}
                 />
                 <Typography className="text-red-500">
                   {errors.email && touched.email && errors.email}
@@ -76,7 +91,7 @@ export const Contact = () => {
                   name="message"
                   rows="4"
                   className="p-2"
-                  placeholder="Write something here..."
+                  placeholder={t("message")}
                 />
                 <div className="text-red-500">
                   {errors.message && touched.message && errors.message}
@@ -89,7 +104,7 @@ export const Contact = () => {
                 size="lg"
                 fullWidth={true}
               >
-                Enviar
+                <Trans i18nKey="send"></Trans>
               </button>
             </div>
           </motion.div>

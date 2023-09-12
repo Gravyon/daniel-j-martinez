@@ -1,6 +1,28 @@
 {
   "developer": "Fullstack Developer",
   "contact": "Contact",
+  "talk": "Let's talk",
+  "fname": "Your name",
+  "email": "Your e-mail",
+  "message": "Your message...",
+  "validation": {
+    "fname": {
+      "required": "Name required",
+      "max": "Too long",
+      "min": "Too short"
+    },
+    "email": {
+      "required": "E-mail required",
+      "max": "Too long",
+      "min": "Too short"
+    },
+    "message": {
+      "required": "Don't forget your message",
+      "max": "Too long",
+      "min": "Too short"
+    }
+  },
+  "send": "Send",
   "aboutme": "About me",
   "projects": "Projects",
   "intro": "I am a software developer who is passionate about solving problems. Currently, I am looking for an opportunity that challenges me and allows me to continue growing professionally.",

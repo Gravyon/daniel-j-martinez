@@ -1,6 +1,28 @@
 {
   "developer": "Desenvolvedor Fullstack",
   "contact": "Contato",
+  "talk": "Vamos conversar",
+  "fname": "Seu nome",
+  "email": "Seu e-mail",
+  "message": "Sua mensagem...",
+  "validation": {
+    "fname": {
+      "required": "Nome requerido",
+      "max": "Muito longo",
+      "min": "Muito curto"
+    },
+    "email": {
+      "required": "E-mail requerido",
+      "max": "Muito longo",
+      "min": "Muito curto"
+    },
+    "message": {
+      "required": "Não esqueça sua mensagem",
+      "max": "Muito longo",
+      "min": "Muito curto"
+    }
+  },
+  "send": "Enviar",
   "aboutme": "Sobre Mim",
   "projects": "Projetos",
   "intro": "Sou um desenvolvedor de software apaixonado por resolver problemas. Atualmente, estou em busca de uma oportunidade que me desafie e me permita continuar crescendo profissionalmente.",
