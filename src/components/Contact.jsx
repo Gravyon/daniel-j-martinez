@@ -30,22 +30,13 @@ export const Contact = () => {
   //handleSubmit tiene su propia logica, por lo tanto al submit se le tiene que pasar esa funcion para que sea enviado
   // Tal vez seria posible hacerlo con funcion flecha pero es mas simple de esta forma
   const [state, handleSubmit] = useForm(import.meta.env.VITE_CONTACT);
-  if (state.succeeded) {
-    return (
-      <div>
-        <h1>Thanks for your feedback!</h1>
-      </div>
-    );
-  } else {
-    console.log(state);
-  }
   return (
     <Formik
       initialValues={{ email: "", fname: "", message: "" }}
       validationSchema={signupSchema}
       onSubmit={handleSubmit}
     >
-      {({ errors, touched }) => (
+      {({ errors, touched, resetForm, isSubmitting }) => (
         <Form>
           <Slide triggerOnce delay={100} direction="left" duration={1000}>
             <h1 className="flex m-4 p-2 mt-8">
@@ -98,14 +89,21 @@ export const Contact = () => {
                 </div>
                 <br />
               </div>
-              <button
-                type="submit"
-                className="nav-text w-100 uppercase text-sm mx-2 py-2 px-4 bg-dark-purple font-bold "
-                size="lg"
-                fullWidth={true}
-              >
-                <Trans i18nKey="send"></Trans>
-              </button>
+              {state.succeeded ? (
+                <div className=" my-5 mx-auto m-5 mt-5 mb-5 py-3">
+                  <Trans i18nKey="sent"></Trans>
+                </div>
+              ) : (
+                <button
+                  type="submit"
+                  className="nav-text w-100 uppercase text-sm mx-2 py-2 px-4 bg-dark-purple font-bold "
+                  size="lg"
+                  fullWidth={true}
+                  disabled={isSubmitting}
+                >
+                  <Trans i18nKey="send"></Trans>
+                </button>
+              )}
             </div>
           </motion.div>
         </Form>
