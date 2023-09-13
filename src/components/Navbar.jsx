@@ -3,7 +3,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "./../assets/logo.gif";
 import { useTranslation, Trans } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
-
+import "./../App.css";
 const navigation = [
   { name: "About Me", href: "#aboutme", navkey: "aboutme", current: false },
   { name: "Projects", href: "#projects", navkey: "projects", current: false },
@@ -33,7 +33,7 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex items-center ml-10 md:ml-1">
                   <img
-                    className="h-12 w-auto "
+                    className="h-12 w-auto logo "
                     src={logo}
                     alt="Daniel Martinez"
                   />
@@ -45,7 +45,7 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         className="text-gray-300 nav-text rounded-md px-3 py-2 text-sm font-medium"
-                        aria-current={item.current ? "page" : undefined}
+                        aria-current={item.current ? true : undefined}
                       >
                         <Trans i18nKey={item.navkey}></Trans>
                       </a>
@@ -69,7 +69,7 @@ export default function Navbar() {
                   as="a"
                   href={item.href}
                   className="text-gray-300 hover:outline block nav-text rounded-md px-3 py-2 text-sm font-medium"
-                  aria-current={item.current ? "page" : undefined}
+                  aria-current={item.current ? true : undefined}
                 >
                   <Trans i18nKey={item.navkey}></Trans>
                 </Disclosure.Button>
