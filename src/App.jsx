@@ -9,22 +9,26 @@ import Projects from "./components/Projects";
 function App() {
   return (
     <div className="m-2">
-      <Navbar />
-      <div>
-        <HeroSection />
-      </div>
-      <div id="aboutme">
-        <AboutMe className="mb-2" />
-      </div>
-      <div id="projects">
-        <Projects />
-      </div>
-      <div id="contact">
-        <Contact />
-      </div>
-      <div>
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <section>
+          <HeroSection />
+        </section>
+        <section id="aboutme">
+          <AboutMe className="mb-2" />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+      </main>
+      <footer>
         <Footer />
-      </div>
+      </footer>
     </div>
   );
 }

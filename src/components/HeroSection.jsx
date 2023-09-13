@@ -41,22 +41,23 @@ const HeroSection = () => {
               </Slide>
               <Slide triggerOnce delay={100} direction="right" duration={1000}>
                 <div className="w-full flex items-center justify-center md:justify-start">
-                  <a href="mailto:rdjmartinez95@gmail.com">
-                    <motion.button
-                      type="button"
-                      className="nav-text uppercase text-sm mx-2 py-2 px-4 bg-purple rounded-2xl font-bold "
-                      whileHover="hover"
-                      variants={buttonVariants}
-                    >
-                      <SocialIcon
-                        bgColor="white"
-                        target="_blank"
-                        url="mailto:rdjmartinez95@gmail.com"
-                        style={{ height: 40, width: 40 }}
-                      />{" "}
-                      <Trans i18nKey="contact"></Trans>
-                    </motion.button>
-                  </a>
+                  <motion.button
+                    type="button"
+                    className="nav-text uppercase text-sm mx-2 py-2 px-4 bg-purple rounded-2xl font-bold "
+                    whileHover="hover"
+                    variants={buttonVariants}
+                  >
+                    <SocialIcon
+                      bgColor="white"
+                      target="_blank"
+                      url="mailto:rdjmartinez95@gmail.com"
+                      className="nav-text"
+                      style={{ height: 40, width: 40 }}
+                    />{" "}
+                    <a href="mailto:rdjmartinez95@gmail.com">
+                      <Trans i18nKey="gmail"></Trans>
+                    </a>
+                  </motion.button>
                 </div>
               </Slide>
             </div>

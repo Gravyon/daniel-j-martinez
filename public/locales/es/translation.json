@@ -4,6 +4,7 @@
   "talk": "Hablemos",
   "fname": "Tu nombre",
   "email": "Tu e-mail",
+  "gmail": "E-mail",
   "message": "Tu mensaje...",
   "validation": {
     "fname": {

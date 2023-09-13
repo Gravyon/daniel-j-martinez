@@ -176,8 +176,8 @@ const Projects = () => {
       </Slide>
       <div className="flex flex-wrap justify-center">
         {data.map((project, index) => (
-          <Zoom delay={index * 100}>
-            <motion.div whileHover="hover" variants={cardhover}>
+          <Zoom key={index} delay={index * 100} triggerOnce>
+            <motion.div key={index} whileHover="hover" variants={cardhover}>
               <Card
                 key={index}
                 className="m-5 mt-5 mb-5 py-3 shadow-lg shadow-pink-600 max-w-[26rem] transition-all"

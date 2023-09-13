@@ -60,9 +60,9 @@ export const Contact = () => {
                   type="text"
                   placeholder={t("fname")}
                 />
-                <Typography className="text-red-500 mt-2">
+                <div className="text-red-500 mt-2">
                   {errors.fname && touched.fname && errors.fname}
-                </Typography>
+                </div>
               </div>
               <div className="p-3">
                 <Field
@@ -71,9 +71,9 @@ export const Contact = () => {
                   type="email"
                   placeholder={t("email")}
                 />
-                <Typography className="text-red-500 mt-2">
+                <div className="text-red-500 mt-2">
                   {errors.email && touched.email && errors.email}
-                </Typography>
+                </div>
               </div>
               <div className="shadow-textarea p-3">
                 <Field
@@ -98,7 +98,7 @@ export const Contact = () => {
                   type="submit"
                   className="nav-text w-100 uppercase text-sm mx-2 py-2 px-4 bg-dark-purple font-bold "
                   size="lg"
-                  fullWidth={true}
+                  // fullwidth={true}
                   disabled={isSubmitting}
                 >
                   <Trans i18nKey="send"></Trans>
