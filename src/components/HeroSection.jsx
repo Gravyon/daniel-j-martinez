@@ -40,7 +40,7 @@ const HeroSection = () => {
                 </div>
               </Slide>
               <Slide triggerOnce delay={100} direction="right" duration={1000}>
-                <div className="w-full flex items-center justify-center md:justify-start">
+                {/* <div className="w-full flex items-center justify-center md:justify-start">
                   <motion.button
                     type="button"
                     className="nav-text uppercase text-sm mx-2 py-2 px-4 bg-purple rounded-2xl font-bold "
@@ -58,7 +58,7 @@ const HeroSection = () => {
                       <Trans i18nKey="gmail"></Trans>
                     </a>
                   </motion.button>
-                </div>
+                </div> */}
               </Slide>
             </div>
           </div>
