@@ -9,6 +9,23 @@
   text-align: center;
 }
 
+.about-me {
+  display: flex;
+  flex-direction: column;
+  text-align: justify !important;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.about-me-content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.photo {
+  border-radius: 50%;
+}
+
 .logo {
   transition: transform 1s ease;
 }
