@@ -1,6 +1,7 @@
 {
   "developer": "Desarrollador Fullstack",
   "contact": "Contacto",
+  "footer": { "since": "Desde el ", "made": "Hecho en Uruguay 🇺🇾 🧉" },
   "talk": "Hablemos",
   "fname": "Tu nombre",
   "email": "Tu e-mail",

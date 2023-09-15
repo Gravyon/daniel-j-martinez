@@ -1,21 +1,22 @@
 import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
 import React from "react";
+import { Trans, useTranslation } from "react-i18next";
 const Footer = () => {
   const year = new Date().getFullYear();
-
+  const { t } = useTranslation();
   return (
     <footer className="md:flex md:justify-between grid place-items-center h-32 py-4 sm:px-48 bg-gray-900 shadow-lg shadow-pink-600">
       <div>
         <p className="text-sm text-white text-center dark:text-white">
-          © Desde el {year}.
+          <Trans i18nKey="footer.since"></Trans> {year}
         </p>
         <p className="md:hidden text-sm mt-1 text-white sm:text-center dark:text-white">
-          Hecho en Uruguay 🇺🇾 🧉
+          <Trans i18nKey="footer.made"></Trans>
         </p>
       </div>
       <div>
         <p className="hidden lg:block text-sm text-white sm:text-center dark:text-white">
-          Hecho en Uruguay 🇺🇾 🧉
+          <Trans i18nKey="footer.made"></Trans>
         </p>
       </div>
       <div className="m-1">
