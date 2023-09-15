@@ -90,7 +90,7 @@ export const Contact = () => {
                 <br />
               </div>
               {state.succeeded ? (
-                <div className=" my-5 mx-auto m-5 mt-5 mb-5 py-3">
+                <div className="my-5 mx-auto m-5 mt-5 mb-5 py-3">
                   <Trans i18nKey="sent"></Trans>
                 </div>
               ) : (
