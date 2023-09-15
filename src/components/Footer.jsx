@@ -4,19 +4,22 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="md:flex md:justify-between grid place-items-center h-20 sm:h-32 py-4 bg-gray-900 shadow-lg shadow-pink-600 transition-all">
+    <footer className="md:flex md:justify-between grid place-items-center h-32 py-4 px-48 bg-gray-900 shadow-lg shadow-pink-600 transition-all">
       <div>
         <p className="text-sm text-white sm:text-center dark:text-white">
           © Desde el {year}.
         </p>
-      </div>{" "}
-      <div>
-        <p className="text-sm text-white sm:text-center dark:text-white">
+        <p className="md:hidden text-sm mt-1 text-white sm:text-center dark:text-white">
           Hecho en Uruguay 🇺🇾 🧉
         </p>
       </div>
       <div>
-        <ul className="flex justify-center mt-3 text-sm font-medium sm:mt-0">
+        <p className="hidden lg:block text-sm text-white sm:text-center dark:text-white">
+          Hecho en Uruguay 🇺🇾 🧉
+        </p>
+      </div>
+      <div className="m-1">
+        <ul className="flex justify-center text-sm font-medium sm:mt-0">
           <li className="mr-2">
             <a href="https://www.linkedin.com/in/danieljmartinezdev/">
               <FaLinkedin
@@ -45,7 +48,7 @@ const Footer = () => {
                 style={{ height: 30, width: 30 }}
               />
             </a>
-          </li>{" "}
+          </li>
         </ul>
       </div>
     </footer>
