@@ -14,6 +14,7 @@ import devsafio from "../assets/devsafio.png";
 import reddit from "../assets/reddit.png";
 import dreamview from "../assets/dreamview.png";
 import casaarte from "../assets/casaarte.png";
+import portfolio from "../assets/portfolio.png";
 import {
   FaBootstrap,
   FaCss3Alt,
@@ -30,8 +31,11 @@ import {
   SiFirebase,
   SiTailwindcss,
   SiChakraui,
+  SiFormstack,
+  SiI18Next,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import { MdOutlineAnimation } from "react-icons/md";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -78,6 +82,7 @@ const Projects = () => {
       ],
       image: devsafio,
       link: "https://c8-frontend.vercel.app/",
+      repo: "",
     },
     {
       title: "Casa Arte",
@@ -165,6 +170,44 @@ const Projects = () => {
       image: dreamview,
       link: "https://dream-view.vercel.app/",
     },
+    {
+      title: "Portfolio",
+      descname: "portfolio",
+      description:
+        "My very own portfolio where I got a bit experimental and tried more animations and colors than usual, adding translations for the first time and inspired by synthwave aesthetics",
+      technologies: [
+        {
+          name: "React",
+          icon: <FaReact />,
+        },
+        {
+          name: "CSS",
+          icon: <FaCss3Alt />,
+        },
+        {
+          name: "Tailwind",
+          icon: <SiTailwindcss />,
+        },
+        {
+          name: "Formik/Yup",
+          icon: <FaWpforms />,
+        },
+        {
+          name: "Formspree",
+          icon: <SiFormstack />,
+        },
+        {
+          name: "React i18next",
+          icon: <SiI18Next />,
+        },
+        {
+          name: "Motion Framer",
+          icon: <MdOutlineAnimation />,
+        },
+      ],
+      image: portfolio,
+      link: "https://github.com/Gravyon/rdjmdev",
+    },
   ];
 
   return (
@@ -207,14 +250,25 @@ const Projects = () => {
                     ))}
                   </div>
                   <a target="_blank" href={project.link}>
-                    <Button
-                      type="button"
-                      className="nav-text"
-                      size="lg"
-                      fullWidth={true}
-                    >
-                      <Trans i18nKey="checkitout"></Trans>
-                    </Button>
+                    {project.link.includes("github") ? (
+                      <Button
+                        type="button"
+                        className="nav-text"
+                        size="lg"
+                        fullWidth={true}
+                      >
+                        <Trans i18nKey="repo"></Trans>
+                      </Button>
+                    ) : (
+                      <Button
+                        type="button"
+                        className="nav-text"
+                        size="lg"
+                        fullWidth={true}
+                      >
+                        <Trans i18nKey="checkitout"></Trans>
+                      </Button>
+                    )}
                   </a>
                 </CardFooter>
               </Card>
