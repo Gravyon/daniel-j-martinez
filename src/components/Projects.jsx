@@ -169,44 +169,44 @@ const Projects = () => {
       image: dreamview,
       link: "https://dream-view.vercel.app/",
     },
-    {
-      title: "Portfolio",
-      descname: "portfolio",
-      description:
-        "My very own portfolio where I got a bit experimental and tried more animations and colors than usual, adding translations for the first time and inspired by synthwave aesthetics",
-      technologies: [
-        {
-          name: "React",
-          icon: <FaReact />,
-        },
-        {
-          name: "CSS",
-          icon: <FaCss3Alt />,
-        },
-        {
-          name: "Tailwind",
-          icon: <SiTailwindcss />,
-        },
-        {
-          name: "Formik/Yup",
-          icon: <FaWpforms />,
-        },
-        {
-          name: "Formspree",
-          icon: <SiFormstack />,
-        },
-        {
-          name: "React i18next",
-          icon: <SiI18Next />,
-        },
-        {
-          name: "Motion Framer",
-          icon: <MdOutlineAnimation />,
-        },
-      ],
-      image: portfolio,
-      link: "https://github.com/Gravyon/rdjmdev",
-    },
+    // {
+    //   title: "Portfolio",
+    //   descname: "portfolio",
+    //   description:
+    //     "My very own portfolio where I got a bit experimental and tried more animations and colors than usual, adding translations for the first time and inspired by synthwave aesthetics",
+    //   technologies: [
+    //     {
+    //       name: "React",
+    //       icon: <FaReact />,
+    //     },
+    //     {
+    //       name: "CSS",
+    //       icon: <FaCss3Alt />,
+    //     },
+    //     {
+    //       name: "Tailwind",
+    //       icon: <SiTailwindcss />,
+    //     },
+    //     {
+    //       name: "Formik/Yup",
+    //       icon: <FaWpforms />,
+    //     },
+    //     {
+    //       name: "Formspree",
+    //       icon: <SiFormstack />,
+    //     },
+    //     {
+    //       name: "React i18next",
+    //       icon: <SiI18Next />,
+    //     },
+    //     {
+    //       name: "Motion Framer",
+    //       icon: <MdOutlineAnimation />,
+    //     },
+    //   ],
+    //   image: portfolio,
+    //   link: "https://github.com/Gravyon/rdjmdev",
+    // },
   ];
 
   return (
@@ -249,16 +249,16 @@ const Projects = () => {
                     ))}
                   </div>
                   <a target="_blank" href={project.link}>
-                    {project.link.includes("github") ? (
-                      <Button
+                    {/* {project.link.includes("github") ? ( */}
+                      {/* <Button
                         type="button"
                         className="nav-text"
                         size="lg"
                         fullWidth={true}
                       >
                         <Trans i18nKey="repo"></Trans>
-                      </Button>
-                    ) : (
+                      </Button> */}
+                    {/* // ) : ( */}
                       <Button
                         type="button"
                         className="nav-text"
@@ -267,7 +267,7 @@ const Projects = () => {
                       >
                         <Trans i18nKey="checkitout"></Trans>
                       </Button>
-                    )}
+                    {/* )} */}
                   </a>
                 </CardFooter>
               </Card>

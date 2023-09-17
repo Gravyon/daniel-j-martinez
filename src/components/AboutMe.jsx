@@ -8,7 +8,7 @@ const AboutMe = () => {
     <div>
       <Slide triggerOnce delay={100} direction="down" duration={1000}>
         <h1 className="flex m-4 p-2">
-          <Trans i18nKey="aboutme">About me</Trans>
+          <Trans i18nKey="aboutme"></Trans>
         </h1>
       </Slide>
       <img
