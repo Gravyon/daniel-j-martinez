@@ -13,7 +13,7 @@ const LanguageSwitcher = ({ currentLanguage, onChangeLanguage }) => {
     <Menu>
       <div>
         <Menu.Button className="inline-flex w-full justify-center uppercase gap-x-1.5 rounded-md nav-text  px-3 py-2 text-sm font-semibold shadow-sm ring-1 ring-inset ">
-          {lngs[currentLanguage].nativeName.toUpperCase()}
+          {/* {lngs[currentLanguage].nativeName.toUpperCase()} */}
           <ChevronDownIcon
             className="-mr-1 h-5 w-5 text-gray-400"
             aria-hidden="true"
