@@ -1,5 +1,5 @@
 import React from "react";
-import { Slide } from "react-awesome-reveal";
+import { Slide, Zoom } from "react-awesome-reveal";
 import { Trans, useTranslation } from "react-i18next";
 import daniel from "../assets/daniel.jpg";
 const AboutMe = () => {
@@ -12,11 +12,13 @@ const AboutMe = () => {
           <Trans i18nKey="aboutme"></Trans>
         </h1>
       </Slide>
-      <img
-        src={daniel}
-        alt="Yo"
-        className="photo ml-2 w-40 inline sm:float-right"
-      />
+      <Zoom triggerOnce delay={5}>
+        <img
+          src={daniel}
+          alt="Yo"
+          className="photo ml-2 w-40 inline sm:float-right"
+        />
+      </Zoom>
       <div className="about-me">
         <div className="md:px-8 md:py-8 lg:px-8 lg:py-8">
           <Slide triggerOnce direction="left">
