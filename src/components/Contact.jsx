@@ -18,9 +18,11 @@ export const Contact = () => {
       .required(t("validation.fname.required")),
     email: Yup.string()
       .email(t("validation.email.email"))
-      .required(t("validation.email.required")),
+      .required(t("validation.email.required"))
+      .min(t("validation.email.min"))
+      .max(254, t("validation.email.max")),
     message: Yup.string()
-      .max(250, t("validation.message.max"))
+      .max(500, t("validation.message.max"))
       .min(2, t("validation.message.min"))
       .required(t("validation.message.required")),
   });

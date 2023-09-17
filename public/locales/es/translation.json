@@ -15,6 +15,7 @@
     },
     "email": {
       "required": "Correo electrónico requerido",
+      "email": "El correo debe ser válido",
       "max": "Demasiado largo",
       "min": "Demasiado corto"
     },
