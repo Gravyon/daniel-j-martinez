@@ -15,7 +15,7 @@ const AboutMe = () => {
       <img
         src={daniel}
         alt="Yo"
-        className="photo w-40 mt-10 inline sm:float-right"
+        className="photo ml-2 w-40 inline sm:float-right"
       />
       <div className="about-me">
         <div className="md:px-8 md:py-8 lg:px-8 lg:py-8">
