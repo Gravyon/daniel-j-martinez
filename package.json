@@ -10,8 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@babel/core": "latest",
-    "@emotion/react": "^11.11.1",
+    "@babel/core": "^7.22.20",
     "@formspree/react": "^2.5.1",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",

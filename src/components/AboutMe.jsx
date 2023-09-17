@@ -4,6 +4,7 @@ import { Trans, useTranslation } from "react-i18next";
 import daniel from "../assets/daniel.jpg";
 const AboutMe = () => {
   const { t } = useTranslation();
+
   return (
     <div>
       <Slide triggerOnce delay={100} direction="down" duration={1000}>
@@ -14,7 +15,7 @@ const AboutMe = () => {
       <img
         src={daniel}
         alt="Yo"
-        className="photo w-40 mt-10 sm:inline sm:float-right"
+        className="photo w-40 mt-10 inline sm:float-right"
       />
       <div className="about-me">
         <div className="about-me-content">
