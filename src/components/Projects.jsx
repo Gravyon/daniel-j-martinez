@@ -82,7 +82,6 @@ const Projects = () => {
       ],
       image: devsafio,
       link: "https://c8-frontend.vercel.app/",
-      repo: "",
     },
     {
       title: "Casa Arte",
