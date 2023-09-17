@@ -18,7 +18,7 @@ const AboutMe = () => {
         className="photo w-40 mt-10 inline sm:float-right"
       />
       <div className="about-me">
-        <div className="about-me-content">
+        <div className="md:px-8 md:py-8 lg:px-8 lg:py-8">
           <Slide triggerOnce direction="left">
             <p className="about-me-text m-5 sm:m-2">
               <Trans i18nKey="info1"></Trans>
