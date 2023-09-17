@@ -2,6 +2,7 @@ import React from "react";
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import { BsGlobe } from "react-icons/bs";
 const LanguageSwitcher = ({ currentLanguage, onChangeLanguage }) => {
   const lngs = {
     en: { nativeName: "en" },
@@ -13,9 +14,11 @@ const LanguageSwitcher = ({ currentLanguage, onChangeLanguage }) => {
     <Menu>
       <div>
         <Menu.Button className="inline-flex w-full justify-center uppercase gap-x-1.5 rounded-md nav-text  px-3 py-2 text-sm font-semibold shadow-sm ring-1 ring-inset ">
-          {lngs[currentLanguage]
-            ? lngs[currentLanguage].nativeName.toUpperCase()
-            : "Language"}
+          {lngs[currentLanguage] ? (
+            lngs[currentLanguage].nativeName.toUpperCase()
+          ) : (
+            <BsGlobe />
+          )}
           <ChevronDownIcon
             className="-mr-1 h-5 w-5 text-gray-400"
             aria-hidden="true"
