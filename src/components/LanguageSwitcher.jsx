@@ -17,7 +17,9 @@ const LanguageSwitcher = ({ currentLanguage, onChangeLanguage }) => {
           {lngs[currentLanguage] ? (
             lngs[currentLanguage].nativeName.toUpperCase()
           ) : (
-            <BsGlobe />
+            <span className="mt-1">
+              <BsGlobe />
+            </span>
           )}
           <ChevronDownIcon
             className="-mr-1 h-5 w-5 text-gray-400"
