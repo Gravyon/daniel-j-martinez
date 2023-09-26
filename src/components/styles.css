@@ -31,15 +31,15 @@ textarea {
   width: 70%;
   border-radius: 0.75rem;
   padding: 0.25rem;
-}
-
-textarea:focus {
   height: 200px;
 }
+
+/* textarea:focus {
+  height: 200px;
+} */
 
 textarea,
 input {
   background-color: #201148;
   color: #ff34b3;
 }
-
