@@ -218,6 +218,6 @@ export const data = [
       },
     ],
     image: norpe,
-    link: "https://github.com/Gravyon/rdjmdev",
+    link: "https://github.com/Gravyon/NorpeLtda",
   },
 ];
