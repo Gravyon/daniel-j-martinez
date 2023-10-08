@@ -32,7 +32,7 @@ const Projects = () => {
             <motion.div key={index} whileHover="hover" variants={cardhover}>
               <Card
                 key={index}
-                className="m-5 mt-5 mb-5 py-3 flex-grow shadow-lg shadow-pink-600 max-w-[26rem]"
+                className="m-5 mt-5 mb-5 py-3 flex-grow shadow-lg shadow-pink-600 h-[32rem] max-w-[26rem]"
               >
                 <CardHeader floated={false}>
                   <img className="rounded-xl" src={project.image} alt="Image" />
