@@ -44,12 +44,12 @@ const Projects = () => {
                       {project.title}
                     </Typography>
                   </div>
-                  <p className="mt-2 mx-2 grid place-items-center ">
+                  <p className="m-3 grid place-items-center ">
                     <Trans i18nKey={project.descname}></Trans>
                   </p>
                 </CardBody>
-                <CardFooter className="pt-3 mt-auto m-2">
-                  <div className="m-8 mx-auto inline-flex flex-wrap items-center gap-3">
+                <CardFooter className="py-3 mt-auto mx-2">
+                  <div className="m-8 mx-auto inline-flex flex-wrap items-center gap-2">
                     {project.technologies.map((tech, id) => (
                       <Tooltip key={id} content={tech.name}>
                         <span className="place-items-center mx-auto cursor-pointer rounded-full border border-bright-blue p-3 transition-colors hover:border-pink-700 typography-hover">
