@@ -6,7 +6,7 @@ import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-
+//Typescript convertion
 function App() {
   return (
     <div className="m-2">
