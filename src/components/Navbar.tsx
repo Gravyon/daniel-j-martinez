@@ -57,7 +57,7 @@ export default function Navbar() {
               <div>
                 <LanguageSwitcher
                   currentLanguage={i18n.language}
-                  onChangeLanguage={(lng) => i18n.changeLanguage(lng)}
+                  onChangeLanguage={(lng:string) => i18n.changeLanguage(lng)}
                 />
               </div>
             </div>
