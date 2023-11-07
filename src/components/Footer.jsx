@@ -1,7 +1,9 @@
 import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
+import React from "react";
 import { Trans, useTranslation } from "react-i18next";
 const Footer = () => {
   const year = new Date().getFullYear();
+  const { t } = useTranslation();
   return (
     <footer className="md:flex md:justify-between grid place-items-center h-32 py-4 sm:px-48 bg-gray-900 shadow-lg shadow-pink-600">
       <div>

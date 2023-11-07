@@ -1,18 +1,10 @@
+import React from "react";
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { BsGlobe } from "react-icons/bs";
-
-interface LanguageSwitcherProps {
-  currentLanguage: string;
-  onChangeLanguage: (language: string) => void;
-}
-
-const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
-  currentLanguage,
-  onChangeLanguage,
-}) => {
-  const lngs: Record<string, { nativeName: string }> = {
+const LanguageSwitcher = ({ currentLanguage, onChangeLanguage }) => {
+  const lngs = {
     en: { nativeName: "en" },
     es: { nativeName: "es" },
     pt: { nativeName: "pt" },

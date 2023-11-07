@@ -1,4 +1,3 @@
-import React from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "./../assets/logo.gif";
@@ -57,7 +56,7 @@ export default function Navbar() {
               <div>
                 <LanguageSwitcher
                   currentLanguage={i18n.language}
-                  onChangeLanguage={(lng:string) => i18n.changeLanguage(lng)}
+                  onChangeLanguage={(lng) => i18n.changeLanguage(lng)}
                 />
               </div>
             </div>

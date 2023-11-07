@@ -10,11 +10,8 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #201148;
   /* background: #100a1c; */
-  background-image: radial-gradient(
-      50% 30% ellipse at center top,
-      #201e40 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
+  background-image:
+    radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0,0,0,0) 100%),
     radial-gradient(60% 50% ellipse at center bottom, #481143 0%, #201148 100%);
   background-attachment: fixed;
   font-synthesis: none;

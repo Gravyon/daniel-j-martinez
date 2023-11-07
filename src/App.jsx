@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import AboutMe from "./components/AboutMe";
 import { Contact } from "./components/Contact";
@@ -7,7 +6,7 @@ import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-//Typescript convertion
+
 function App() {
   return (
     <div className="m-2">
@@ -20,7 +19,7 @@ function App() {
             <HeroSection />
           </section>
           <section id="aboutme">
-            <AboutMe />
+            <AboutMe className="mb-2" />
           </section>
           <section id="projects">
             <Projects />
