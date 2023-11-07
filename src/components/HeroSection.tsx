@@ -3,7 +3,7 @@ import { useTranslation, Trans } from "react-i18next";
 import "./styles.css";
 
 const HeroSection = () => {
-  const { t } = useTranslation();
+
   return (
     <section className="mb-8">
       <div className="md:bg-hero relative bg-no-repeat bg-center h-full">

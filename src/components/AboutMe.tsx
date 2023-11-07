@@ -2,8 +2,6 @@ import { Slide, Zoom } from "react-awesome-reveal";
 import { Trans, useTranslation } from "react-i18next";
 import daniel from "../assets/daniel.jpg";
 const AboutMe = () => {
-  const { t } = useTranslation();
-
   return (
     <div className="mb-2">
       <Slide triggerOnce delay={100} direction="down" duration={1000}>

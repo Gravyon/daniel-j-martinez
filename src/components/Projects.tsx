@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 import { data } from "../data/projects";
 
 const Projects = () => {
-  const { t } = useTranslation();
+
   const cardhover = {
     hover: { scale: 1.1 },
   };
