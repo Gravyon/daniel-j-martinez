@@ -1,3 +1,4 @@
+import React from "react";
 import devsafio from "../assets/devsafio.png";
 import reddit from "../assets/reddit.png";
 import dreamview from "../assets/dreamview.png";

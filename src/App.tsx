@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import AboutMe from "./components/AboutMe";
 import { Contact } from "./components/Contact";
@@ -19,7 +20,7 @@ function App() {
             <HeroSection />
           </section>
           <section id="aboutme">
-            <AboutMe className="mb-2" />
+            <AboutMe />
           </section>
           <section id="projects">
             <Projects />
