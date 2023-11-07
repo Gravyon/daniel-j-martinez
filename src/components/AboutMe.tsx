@@ -1,4 +1,3 @@
-import React from "react";
 import { Slide, Zoom } from "react-awesome-reveal";
 import { Trans, useTranslation } from "react-i18next";
 import daniel from "../assets/daniel.jpg";

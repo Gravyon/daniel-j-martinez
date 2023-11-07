@@ -1,5 +1,4 @@
 import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
-import React from "react";
 import { Trans, useTranslation } from "react-i18next";
 const Footer = () => {
   const year = new Date().getFullYear();

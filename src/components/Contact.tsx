@@ -1,4 +1,3 @@
-import React from "react";
 import { useForm } from "@formspree/react";
 import { Formik, Form, Field } from "formik";
 import "./styles.css";
@@ -19,7 +18,7 @@ export const Contact = () => {
     email: Yup.string()
       .email(t("validation.email.email"))
       .required(t("validation.email.required"))
-      .min(50,t("validation.email.min"))
+      .min(50, t("validation.email.min"))
       .max(254, t("validation.email.max")),
     message: Yup.string()
       .max(500, t("validation.message.max"))
@@ -38,7 +37,7 @@ export const Contact = () => {
       validationSchema={signupSchema}
       onSubmit={handleSubmit}
     >
-      {({ errors, touched, resetForm, isSubmitting }) => (
+      {({ errors, touched, isSubmitting }) => (
         <Form>
           <Slide triggerOnce delay={100} direction="left" duration={1000}>
             <h1 className="flex m-4 p-2 mt-8">
@@ -99,8 +98,6 @@ export const Contact = () => {
                 <button
                   type="submit"
                   className="nav-text w-100 uppercase text-sm mx-2 py-2 px-4 bg-dark-purple font-bold "
-                  size="lg"
-                  // fullwidth={true}
                   disabled={isSubmitting}
                 >
                   <Trans i18nKey="send"></Trans>

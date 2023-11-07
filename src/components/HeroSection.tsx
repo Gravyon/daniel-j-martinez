@@ -1,15 +1,9 @@
-import React from "react";
-import { Slide, Zoom } from "react-awesome-reveal";
-import { SocialIcon } from "react-social-icons";
+import { Slide } from "react-awesome-reveal";
 import { useTranslation, Trans } from "react-i18next";
-import { motion } from "framer-motion";
 import "./styles.css";
 
 const HeroSection = () => {
   const { t } = useTranslation();
-  const buttonVariants = {
-    hover: { scale: 1.1 },
-  };
   return (
     <section className="mb-8">
       <div className="md:bg-hero relative bg-no-repeat bg-center h-full">
