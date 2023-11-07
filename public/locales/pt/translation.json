@@ -1,0 +1,45 @@
+{
+  "developer": "Desenvolvedor Web",
+  "contact": "Contato",
+  "footer": { "since": "Desde o ", "made": "Feito em Uruguay 🇺🇾 🧉" },
+  "talk": "Vamos conversar",
+  "fname": "Seu nome",
+  "email": "Seu e-mail",
+  "gmail": "E-mail",
+  "message": "Sua mensagem...",
+  "validation": {
+    "fname": {
+      "required": "Nome requerido",
+      "max": "Muito longo",
+      "min": "Muito curto"
+    },
+    "email": {
+      "required": "E-mail requerido",
+      "email": "O e-mail têm que ser válido",
+      "max": "Muito longo",
+      "min": "Muito curto"
+    },
+    "message": {
+      "required": "Não esqueça sua mensagem",
+      "max": "Muito longo",
+      "min": "Muito curto"
+    }
+  },
+  "send": "Enviar",
+  "sent": "Mensagem postado",
+  "aboutme": "Sobre Mim",
+  "projects": "Projetos",
+  "intro": "Sou um desenvolvedor de software apaixonado por resolver problemas. Atualmente, estou em busca de uma oportunidade que me desafie e me permita continuar crescendo profissionalmente.",
+  "checkitout": "Visitar",
+  "tech": "Tecnologias Utilizadas: ",
+  "repo": "Ver o código no GitHub",
+  "devsafio": "Uma reformulação completa do site principal da Devsafio, onde empregadores podem solicitar talentos e candidatos podem encontrar empregos.",
+  "casaarte": "Uma aplicação web interativa de stack completa onde os usuários podem comprar e vender arte, comentar e avaliar obras de outros.",
+  "reddit": "Um clone do Reddit com login e registro funcionais, usando o Firebase como banco de dados com comunidades de usuários e feed de usuário.",
+  "dreamview": "Recebi a tarefa de construir um site para um cinema fictício, onde eles exibiriam filmes para visualização e os usuários poderiam fazer avaliações.",
+  "portfolio": "Meu próprio portfólio onde eu me aventurei um pouco mais, experimentando com animações e cores além do comum e adicionando traduções.",
+  "norpe": "Um desenho completamente novo para a página da empresa de segurança de casa e monitoramento Norpe, utilizando tecnologias modernas.",
+  "info1": "Olá! Sou um desenvolvedor web, gosto de aprender novas tecnologias, experimentar coisas novas, ter sucesso e falhar, mas, no final, superar os desafios. A programação é minha paixão e adoro a sensação de começar um novo projeto com todo tipo de novas ideias e planos.",
+  "info2": "Também estou familiarizado com metodologias ágeis como SCRUM e desenvolvimento de software Lean. Estou buscando uma oportunidade no campo de TI para continuar aprendendo e ampliar meus horizontes, não apenas em conhecimento técnico, mas também para conhecer novas pessoas e compartilhar ideias e conhecimentos.",
+  "info3": "Minha formação acadêmica inclui um bacharelado em Tecnologia da Informação, que me proporcionou uma base sólida em fundamentos de programação e conceitos de software. Além disso, o bootcamp Fullstack que frequentei me permitiu adquirir habilidades práticas no desenvolvimento de aplicativos da web usando várias tecnologias. Estou sempre aprendendo coisas novas e interessantes no campo de TI."
+}

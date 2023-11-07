@@ -1,0 +1,45 @@
+{
+  "developer": "Desarrollador Web",
+  "contact": "Contacto",
+  "footer": { "since": "Desde el ", "made": "Hecho en Uruguay 🇺🇾 🧉" },
+  "talk": "Hablemos",
+  "fname": "Tu nombre",
+  "email": "Tu e-mail",
+  "gmail": "E-mail",
+  "message": "Tu mensaje...",
+  "validation": {
+    "fname": {
+      "required": "Nombre requerido",
+      "max": "Demasiado largo",
+      "min": "Demasiado corto"
+    },
+    "email": {
+      "required": "Correo electrónico requerido",
+      "email": "El correo debe ser válido",
+      "max": "Demasiado largo",
+      "min": "Demasiado corto"
+    },
+    "message": {
+      "required": "No olvides tu mensaje",
+      "max": "Demasiado largo",
+      "min": "Demasiado corto"
+    }
+  },
+  "send": "Enviar",
+  "sent": "Mensaje enviado",
+  "aboutme": "Acerca de mi",
+  "projects": "Proyectos",
+  "intro": "Soy un desarrollador de software que le apasiona solucionar problemas. Actualmente, busco una oportunidad que me desafíe y me permita seguir creciendo profesionalmente.",
+  "checkitout": "Visitar",
+  "tech": "Tecnologias utilizadas: ",
+  "repo": "Ver código en GitHub",
+  "devsafio": "Una renovación completa del sitio web principal de Devsafio, donde los empleadores pueden solicitar talento y los solicitantes pueden encontrar trabajos.",
+  "casaarte": "Una página donde los usuarios pueden comprar y vender su propia arte o a nombre de un artista, comentar y calificar las obras de otros",
+  "reddit": "Un clon de Reddit con un sistema de inicio de sesión y registro funcional, utilizando Firebase como base de datos con comunidades de usuarios y un feed de usuarios.",
+  "dreamview": "Como prueba técnica, se me encargó la construcción de un sitio web para un cine ficticio, donde mostrarían las películas para su visualización y los usuarios pueden reseñarlas.",
+  "portfolio": "Mi propio portafolio donde me puse un poco experimental y probé más animaciones y colores de lo habitual y agregando traducciones.",
+  "norpe": "Un diseño completamente nuevo de frontend para la página de la empresa de seguridad de hogar y monitoreo Norpe, utilizando tecnologías modernas",
+  "info1": "¡Hola! Soy un desarrollador web, me gusta aprender nuevas tecnologías, probar cosas nuevas, triunfar y fracasar, pero al final superar los desafíos. La programación es mi pasión y me encanta la sensación de iniciar un nuevo proyecto con todo tipo de nuevas ideas y planes.",
+  "info2": "También estoy familiarizado con metodologías ágiles como SCRUM y desarrollo de software Lean. Busco una oportunidad en el campo TI para seguir aprendiendo y ampliar mis horizontes, no solo en conocimientos técnicos, sino también para conocer gente nueva e intercambiar ideas y conocimientos.",
+  "info3": "Mis estudios académicos incluyen un bachillerato en IT y una Licenciatura en Tecnología de la Información, lo que me ha brindado una base sólida en fundamentos de programación y conceptos de software. Además, el bootcamp fullstack al que asistí me permitió adquirir habilidades prácticas en el desarrollo de aplicaciones web utilizando una variedad de tecnologías. Siempre estoy aprendiendo cosas nuevas e interesantes en el ámbito de TI."
+}
